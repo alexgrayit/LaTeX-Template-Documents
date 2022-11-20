@@ -1,0 +1,1 @@
+# LaTeX Template Documents
