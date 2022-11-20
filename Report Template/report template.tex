@@ -1,0 +1,121 @@
+\documentclass[a4paper, 12pt, english]{article}
+\include{Report Preamble.tex}
+
+
+
+\begin{document}
+    \pagenumbering{gobble} % turns off page numbering
+
+    \fullPageTitle
+    %\topTitle
+
+    \thispagestyle{noheader}
+    \tableofcontents
+
+    \vspace{2em}
+    \listoffigures
+
+    \vspace{2em}
+    \listoftables
+
+    \newpage
+    \pagenumbering{arabic} % restarts page numbering in arabic numerals
+
+    \section{Background}
+        \label{sec: background}
+        
+        This is the background section.
+    
+
+        \subsection{Motivation}
+            \label{subsec: motivation}
+
+            Text.
+
+
+        \subsection{Theory \& Existing Research}
+            \label{subsec: theory and existing research}
+
+            Text.
+
+    
+    \section{Experimentation}
+        \label{sec: experimentation}
+
+        \subsection{Aim}
+            \label{subsec: aim}
+
+            Text.
+
+            
+        \subsection{Hypothesis}
+            \label{subsec: hypothesis}
+
+            Text.
+
+
+        \subsection{Methodology}
+            \label{subsec: methodology}
+
+            Text.
+                
+
+
+
+    \section{Results}
+        \label{sec: results}
+
+        Maybe a figure here or there.
+
+
+    \section{Discussion}
+        \label{sec: discussion}
+        Text here
+
+
+    \section{Conclusion}
+        \label{sec: conclusion}
+
+        Text here
+
+
+    \newpage
+
+    \pagenumbering{roman}
+
+
+    \references
+
+    \newpage
+
+
+    \appendices
+
+        \subsection{Example}\label{app:example}
+            \begin{figure}[!h]
+                \begin{subfigure}[t]{0.45\textwidth}
+                    \centering
+                    %\includegraphics[width=0.4\textwidth]{<image>}
+                    \caption{Text Here}
+                    \label{subfig: example1}
+                \end{subfigure}
+                ~
+                \begin{subfigure}[t]{0.45\textwidth}
+                    \centering
+                    %\includegraphics[width=0.4\textwidth]{<image>}
+                    \caption{Text Here}
+                    \label{subfig: example2}
+                \end{subfigure}
+                
+
+                \caption{Text here}
+                \label{fig: example}
+            \end{figure}
+
+            \FloatBarrier
+
+            Text here
+
+            
+            
+\end{document}

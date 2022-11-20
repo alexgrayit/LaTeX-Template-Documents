@@ -1,0 +1,9 @@
+[0] Config.pm:306> INFO - This is Biber 2.18
+[0] Config.pm:309> INFO - Logfile is 'build_report template guide/report template guide.blg'
+[86] biber-MSWIN64:340> INFO - === 
+[117] Biber.pm:418> INFO - Reading 'build_report template guide/report template guide.bcf'
+[214] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
+[231] bbl.pm:654> INFO - Writing 'build_report template guide/report template guide.bbl' with encoding 'UTF-8'
+[231] bbl.pm:757> INFO - Output to build_report template guide/report template guide.bbl
+[231] Biber.pm:130> WARN - The file 'build_report template guide/report template guide.bcf' does not contain any citations!
+[231] Biber.pm:132> INFO - WARNINGS: 1

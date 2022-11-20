@@ -1,0 +1,9 @@
+[0] Config.pm:311> INFO - This is Biber 2.16
+[0] Config.pm:314> INFO - Logfile is 'build_Formula Sheet\Formula Sheet.blg'
+[80] biber-MSWIN64:340> INFO - === 
+[111] Biber.pm:415> INFO - Reading 'build_Formula Sheet\Formula Sheet.bcf'
+[199] Biber.pm:952> INFO - Found 0 citekeys in bib section 0
+[203] Utils.pm:395> WARN - The file 'build_Formula Sheet\Formula Sheet.bcf' does not contain any citations!
+[211] bbl.pm:654> INFO - Writing 'build_Formula Sheet\Formula Sheet.bbl' with encoding 'UTF-8'
+[211] bbl.pm:757> INFO - Output to build_Formula Sheet\Formula Sheet.bbl
+[214] Biber.pm:128> INFO - WARNINGS: 1

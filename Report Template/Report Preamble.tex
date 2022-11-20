@@ -1,0 +1,476 @@
+% -------------------------------------------------------------
+%   ------ See bottom of document to edit parameters -------  |
+% -------------------------------------------------------------
+
+
+
+
+% ---------------------------------------------------------------------------------------------------
+% || ------------------------------------ LOTS OF PACKAGES --------------------------------------- ||
+% ---------------------------------------------------------------------------------------------------
+
+% OK just a warning - PACKAGE ORDER MATTERS - for instance the maths packages
+% not being at the top breaks the compilation. LaTeX shenanigans can be annoying.
+
+
+% Maths Formatting Packages - they just add extra commands
+\usepackage{amsmath}
+\usepackage{array} % extends array formatting
+\usepackage{amssymb}
+\usepackage{nccmath}
+\usepackage{esint} % more integrals
+\usepackage{bm} % bold math text that's not awful
+\usepackage{xfrac} % slanted frac \sfrac
+\usepackage{bigints}
+\usepackage{tabularx}
+\usepackage{cancel}
+\usepackage{mathtools}%idk whether this is needed but ¯\_(ツ)_/¯
+
+
+
+% Document/Text Formatting Packages
+\usepackage[a4paper, portrait, right=20mm, left=20mm, top=25mm, bottom=20mm, showframe=false]{geometry} % margins
+\usepackage{booktabs} % tables - needed so that tables from latex table makers work
+\usepackage{babel} % language options
+\usepackage[utf8]{inputenc} % adds extra unicode characters
+    \DeclareUnicodeCharacter{2212}{-}
+\usepackage{multicol}
+\usepackage{paracol}
+\usepackage{fix-cm}
+\usepackage{import}
+\usepackage{csquotes} % it told me to
+\usepackage{xcolor} % colours yay
+\usepackage{xpatch}
+\usepackage{accents} % text accents
+\usepackage[none]{hyphenat} % hyphenation
+\usepackage{tocloft} % table of contents control
+    \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % adds dots between section titles and page numbers in ToC
+\usepackage[justification=centering, margin=10mm]{caption} 
+\usepackage{subcaption} % improves captions for subfigures
+
+
+\usepackage{placeins} % Adds the \FloatBarrier command
+\usepackage[hidelinks, plainpages=false, pdfpagelabels]{hyperref} % Hyperlinks - yay we live in the modern world
+\usepackage{url} % adds url linking
+\usepackage{nameref} % adds ability to reference sections by name
+\usepackage{bookmark}
+
+\usepackage{calc} % adds \setlength and other commands
+\usepackage{lastpage} % page number referencing
+
+\usepackage[bottom]{footmisc} %footnote customizability, [bottom] forces footnotes to the bottom
+
+\usepackage{fancyhdr} % fancy headers and footers
+
+\usepackage[T1]{fontenc} 
+\usepackage{lmodern} % fixes some font issues that happen sometimes
+\usepackage{titling} % title stuff
+\usepackage{titlesec} % title format customisation
+
+
+\usepackage{abstract} % Allows abstract customization
+    \addto{\captionsenglish}{\renewcommand{\abstractname}{}}   % clear the title
+    \renewcommand{\absnamepos}{empty} % originally center -- don't want an abstract title or it's whitespace
+
+
+% Physics Packages
+\usepackage[arrowdel]{physics} % - \grad{} \div{} \curl{} \laplacian{}
+\usepackage{siunitx} % adds si units \si{\unit} (it's hard to use at first, look up the documentation)
+
+
+% Code Formatting Packages
+\usepackage{listings} % code text environment
+
+
+% Graphics Formatting Packages
+\usepackage{tikz}
+\usepackage{tikzscale}
+    \usetikzlibrary{shapes,arrows,positioning}
+    \usetikzlibrary{matrix,calc}
+\usepackage{tikz-3dplot}
+    \usetikzlibrary{calc,patterns,angles,quotes}
+\usepackage{graphicx}
+\usepackage{graphics}
+
+\usepackage{pgfplots}
+    % Dunno, it complains if this isn't here
+    \pgfplotsset{compat=1.17}
+\usepackage{pgf} % allows inclusion of pgf vector graphic images
+\usepackage{adjustbox}
+
+
+
+
+% ---------------------------------------------------------------------------------------------------
+% || --------------------------------------- REFERENCING ----------------------------------------- ||
+% ---------------------------------------------------------------------------------------------------
+
+\usepackage[backend=biber, style=apa]{biblatex}
+\addbibresource{references.bib}% Syntax for version >= 1.2
+% the references.bib should be in the same directory as the tex file
+
+
+
+
+
+% ---------------------------------------------------------------------------------------------------
+% || --------------------------------------- TEXT SPACING ---------------------------------------- ||
+% ---------------------------------------------------------------------------------------------------
+
+% overridden in customization at bottom
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+
+
+\newlength{\tablegap}
+\setlength{\tablegap}{0.3em} % put in square brackets after i.e. \\[\tablegap]
+
+
+
+% ---------------------------------------------------------------------------------------------------
+% || ---------------------------------- CUSTOM MATHS COMMANDS ------------------------------------ ||
+% ---------------------------------------------------------------------------------------------------
+
+
+\setlength{\jot}{0.5em} % length between newlines of align environment
+
+% Symbols and Notation
+\newcommand{\ud}{\, \, \mathrm{d}}
+\newcommand{\Reals}{\mathbb{R}}
+\newcommand{\Complexs}{\mathbb{C}}
+\newcommand{\Integers}{\mathbb{Z}}
+\newcommand{\Naturals}{\mathbb{N}}
+\newcommand{\Rationals}{\mathbb{Q}}
+\newcommand{\Primes}{\mathbb{P}}
+
+\newcommand{\emf}{\mathcal{E}}
+
+\newcommand{\deq}{\coloneqq} % defined as equal
+
+% Size overriding - big things
+\newcommand{\bfrac}[2]{\frac{\displaystyle #1}{\displaystyle #2}}
+\newcommand{\bint}{\displaystyle \int}
+
+% Vector Formatting
+\newcommand{\hvec}[1]{\accentset{\rightharpoonup{}\vspace{-0.5mm}}{#1}} % harpoon above
+\newcommand{\svec}[1]{\underaccent{\tilde}{#1}} % squiggle below
+\newcommand{\bvec}[1]{\boldsymbol{\mathbf{#1}}} % math bold font
+
+% -Long harpoon vector
+\makeatletter
+\newcommand*{\rightharpoonupfill@}{\arrowfill@\relbar\relbar\rightharpoonup}
+\newcommand{\lhvec}{\mathpalette{\overarrow@\rightharpoonupfill@}}
+\newcommand{\lvect}[1]{\bvec{\lhvec{#1}}}%final edit here
+% -end Long harpoon vector
+
+\newcommand{\vect}[1]{\bvec{\hvec{#1}}} % used vector format
+\newcommand{\vhat}[1]{\bvec{\hat{#1}}} % used hat format
+
+\newcommand{\vmod}[1]{\left\| #1 \right\|} % modulus notation
+
+% Vector Calculus Operators
+%\renewcommand{\grad}{\vect{\nabla}}
+%\renewcommand{\div}{\vect{\nabla} \cdot}
+%\renewcommand{\curl}{\vect{\nabla} \times}
+%\renewcommand{\laplacian}{\bvec{\nabla}^2}
+%\newcommand{\del}{\vect{\nabla}}
+
+% projection operator
+\DeclareMathOperator{\vectProj}{proj}
+\newcommand{\proj}[2]{\vectProj_{#2} {#1}}
+
+% Custom Matrix - better spacing
+\newcommand{\Matrix}[1]{\renewcommand{\arraystretch}{1.25}
+    \left[\begin{matrix}
+    #1
+\end{matrix}\right]
+\renewcommand{\arraystretch}{1}}
+
+
+
+
+% ---------------------------------------------------------------------------------------------------
+% || ------------------------------- INTERNAL REFERENCING COMMANDS ------------------------------- ||
+% ---------------------------------------------------------------------------------------------------
+
+\newcommand{\secrefNameNum}[1]{\mbox{\hyperref[#1]{\S}\ref{#1}\hyperref[#1]{:\hspace{1pt}}\nameref{#1}}} % ref with Num:Name
+\newcommand{\secrefName}[1]{\mbox{\hyperref[#1]{\S\hspace{1pt}}\nameref{#1}}} % ref with just name
+\newcommand{\secrefNum}[1]{\mbox{\hyperref[#1]{\S}\ref{#1}}} % ref with just num
+
+\newcommand{\secref}[1]{\secrefName{#1}} % choose method of section reference
+\newcommand{\appref}[1]{\mbox{\hyperref[#1]{Appendix\hspace{2pt}}\ref{#1}}}
+\renewcommand{\eqref}[1]{\mbox{\hyperref[#1]{Eq.\hspace{2pt}}\ref{#1}}}
+\newcommand{\eqnum}[1]{\ref*{#1}}
+\newcommand{\figref}[1]{\mbox{\hyperref[#1]{Fig.\hspace{2pt}}\ref{#1}}}
+\newcommand{\tableref}[1]{\mbox{\hyperref[#1]{Table \hspace{2pt}}\ref{#1}}}
+
+% use \cite and \textcite to do references
+
+
+
+
+% ---------------------------------------------------------------------------------------------------
+% || --------------------------------- HYPERLINK COLOURING --------------------------------------- ||
+% ---------------------------------------------------------------------------------------------------
+
+% overridden by customization below
+\usepackage{hyperref,xcolor}
+\definecolor{darkblue}{rgb}{0,0,0.6}
+\hypersetup{
+    %pdfpagemode=FullScreen,
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    citecolor=black
+}
+
+
+
+
+% ---------------------------------------------------------------------------------------------------
+% || ---------------------------------- SECTION FORMATTING --------------------------------------- ||
+% ---------------------------------------------------------------------------------------------------
+
+\setlength{\droptitle}{-8em}
+
+
+%spacing is:  left, before, after
+\titlespacing{\section}{0pt}{1em}{-0.5em}
+\titlespacing{\subsection}{0pt}{1em}{-0.7em}
+\titlespacing{\subsubsection}{0pt}{1em}{-0.8em}
+\titlespacing*{\section}{0pt}{5.5ex plus 1ex minus .2ex}{2pt}
+
+\usepackage{bold-extra}
+%\titleformat{<command>}[<shape>]{<format>}{<label>}{<sep>}{<before-code>}[<after-code>]
+\titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+\titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+\titleformat{\paragraph}{\normalfont\normalsize\itshape\bfseries}{{\normalfont\normalsize\bfseries\theparagraph}}{1em}{}
+
+% Add new sublevel
+\newcommand{\subsubsubsection}[1]{\paragraph{#1}\mbox{}\\\vspace{-5em}}
+% A note - this command only works well if there is an empty line after it
+
+
+\newcommand{\references}{
+    \addcontentsline{toc}{section}{References}
+    \setlength\bibitemsep{1.5\itemsep}
+    \printbibliography
+}
+
+
+
+% Use at start of appendix section
+\newcommand{\appendices}{
+    \appendix
+    \titleformat{\section}{\normalfont\LARGE\bfseries}{\thesection}{1em}{}
+    \fancyhead[L]{APPENDICES}
+
+    \section*{Appendices}
+    \addtocounter{section}{1}
+    \addcontentsline{toc}{section}{Appendices}
+
+    \titleformat{\subsection}{\normalfont\Large\bfseries}{\thesubsection}{1em}{}
+    \titleformat{\subsubsection}{\normalfont\large\bfseries}{\thesubsubsection}{1em}{}
+    \titleformat{\paragraph}{\normalfont\normalsize\bfseries}{\paragraph}{1em}{}
+}
+
+
+
+
+
+
+
+% ---------------------------------------------------------------------------------------------------
+% || ----------------------------------- TITLEPAGE COMMANDS -------------------------------------- ||
+% ---------------------------------------------------------------------------------------------------
+
+\newcommand{\topTitle}{
+    {
+        \centering
+
+        {\LARGE \@title}
+
+        \if \@author \empty
+        \else
+            {\large \@author}\\
+        \fi
+    }
+    \vspace{3em}
+}
+
+
+
+
+\newcommand{\fullPageTitle}{
+    \begin{titlepage}
+
+        \vspace{\stretch{1}}
+
+        \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+        
+        \center % Center everything on the page
+         
+
+        % HEADINGS -----------------------------------------------------------------------------------
+        \vspace*{\fill}
+        \if \Uni \empty
+        \else
+            {\scshape\huge ~\Uni}\\[1em] % Name of your university/college
+        \fi
+        
+        \if \School \empty
+        \else
+            {\scshape\Large ~\School}\\[4em] % Major heading such as course name
+        \fi
+        
+        \if \Unit \empty
+        \else
+            {\scshape\Large ~\Unit}\\[1em]
+        \fi
+
+        \if \Class \empty
+        \else
+            {\scshape\large ~\Class}\\[3em]% Minor heading such as course title
+        \fi
+
+
+        % TITLE -----------------------------------------------------------------------------------
+        \HRule \\[0.4cm]
+        { \Huge \bfseries ~\@title}\\[0.1cm] % Title of your document
+        \HRule \\[4em]
+         
+
+        % AUTHOR ----------------------------------------------------------------------------------
+        \if \@author \empty
+        \else
+            {\large \@author}
+        \fi
+        
+
+        % DATE ----------------------------------------------------------------------------------------
+        \if \@date \empty
+        \else
+            {\large ~\@date}\\ % Date, change the \today to a set date if you want to be precise
+        \fi
+        
+        
+
+        \vspace{\stretch{4}} % Fill the rest of the page with whitespace
+        
+        \end{titlepage}
+}
+
+
+
+
+% ---------------------------------------------------------------------------------------------------
+% || --------------------------------- MISC. DOCUMENT FORMATTING --------------------------------- ||
+% ---------------------------------------------------------------------------------------------------
+
+\let\cleardoublepage=\clearpage % stops random pages being printed after the ToC and titlepage
+
+% Sets the maximum number of levels in the Table of Contents to 3
+\setcounter{secnumdepth}{4}
+
+
+\newcommand{\super}{\textsuperscript}
+\newcommand{\sub}{\textsubscript}
+
+
+% Creates new column type for tables
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+
+% Sets the folder path for images to be a subfolder of where the .tex file is
+\graphicspath{{./images/}}
+
+% Headers and footers
+\pagestyle{fancy}
+\fancyhf{}
+\setlength{\headheight}{15.2pt}
+
+% overridden by customisation below
+\fancyhead[L]{\leftmark} % Left header - last section on page
+\fancyhead[R]{\SID} % Right Header
+\fancyfoot[C]{\thepage} % Puts page number bottom centre
+
+
+\fancypagestyle{noheader}{
+  \fancyhf{}% Clear header/footer
+  \renewcommand{\headrulewidth}{0pt}% No header rule
+  \fancyfoot[RE, RO]{\thepage}
+}
+
+
+
+% Equation Explanation
+\newcommand{\eqexp}[1]{
+    \begin{adjustwidth}{0.5cm}{1cm}
+        \textit{#1}
+    \end{adjustwidth}
+    \vspace{0.5em}
+}
+
+
+
+
+
+
+
+
+
+% -------------------------------------------------------------
+%   --- New LaTeX users feel free to edit what is below ---   |
+% -------------------------------------------------------------
+
+% Making any of these fields blank will remove them from the titlepage
+\newcommand{\Uni}{The University of Sydney}
+\newcommand{\School}{School of Aerospace Mechanical and Mechatronics Engineering}
+\newcommand{\Unit}{Unit Code}
+\newcommand{\Class}{Class Time}
+\newcommand{\Assignment}{Assignment Name}
+\newcommand{\SID}{123456789}
+
+\author{Author 1 \\[0.5em] Author 2 \\[0.5em] Author 3 \\}
+
+\date{} % makes it undated, remove this line if you want a date to appear
+%\date{\today} % make the date the current date
+
+
+
+
+
+% ----------------------------------------------------------------------
+%   --- Semi-Advanced LaTeX users feel free to edit what is below ---  |
+% ----------------------------------------------------------------------
+
+\title{\Assignment}
+
+% Formatting
+\numberwithin{equation}{section} % numbers equation with secNum.EqNum, remove to number globally
+
+\setlength{\parindent}{0em} % indent when there is a double newline within the tex code
+\setlength{\parskip}{1em} % vertical space when there is a double newline within the text code
+
+
+\usepackage{hyperref,xcolor}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=magenta,      
+    urlcolor=blue,
+    citecolor=black
+}
+
+
+\fancyhead[L]{\leftmark} % Left header - last section on page
+\fancyhead[R]{\SID} % Right Header
+\fancyfoot[C]{\thepage} % Puts page number bottom centre
+
+
+
+
+% -----------------------------------------------------------------
+%   --- Advanced LaTeX users... do what you want ¯\_(ツ)_/¯ ---   |
+% -----------------------------------------------------------------
