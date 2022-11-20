@@ -34,6 +34,7 @@
 \usepackage{babel} % language options
 \usepackage[utf8]{inputenc} % adds extra unicode characters
     \DeclareUnicodeCharacter{2212}{-}
+\usepackage{dtk-logos}
 \usepackage{multicol}
 \usepackage{paracol}
 \usepackage{fix-cm}
@@ -106,7 +107,7 @@
 % || --------------------------------------- REFERENCING ----------------------------------------- ||
 % ---------------------------------------------------------------------------------------------------
 
-\usepackage[backend=biber, style=apa]{biblatex}
+\usepackage[backend=biber, style=ieee]{biblatex}
 \addbibresource{references.bib}% Syntax for version >= 1.2
 % the references.bib should be in the same directory as the tex file
 
@@ -136,7 +137,8 @@
 \setlength{\jot}{0.5em} % length between newlines of align environment
 
 % Symbols and Notation
-\newcommand{\ud}{\, \, \mathrm{d}}
+\newcommand{\ud}{\ \mathrm{d}}
+\renewcommand{\d}{\mathrm{d}}
 \newcommand{\Reals}{\mathbb{R}}
 \newcommand{\Complexs}{\mathbb{C}}
 \newcommand{\Integers}{\mathbb{Z}}
@@ -170,11 +172,11 @@
 \newcommand{\vmod}[1]{\left\| #1 \right\|} % modulus notation
 
 % Vector Calculus Operators
-%\renewcommand{\grad}{\vect{\nabla}}
-%\renewcommand{\div}{\vect{\nabla} \cdot}
-%\renewcommand{\curl}{\vect{\nabla} \times}
-%\renewcommand{\laplacian}{\bvec{\nabla}^2}
-%\newcommand{\del}{\vect{\nabla}}
+\renewcommand{\grad}{\vect{\nabla}}
+\renewcommand{\div}{\vect{\nabla} \cdot}
+\renewcommand{\curl}{\vect{\nabla} \times}
+\renewcommand{\laplacian}{\bvec{\nabla}^2}
+\newcommand{\del}{\vect{\nabla}}
 
 % projection operator
 \DeclareMathOperator{\vectProj}{proj}
@@ -199,7 +201,7 @@
 \newcommand{\secrefName}[1]{\mbox{\hyperref[#1]{\S\hspace{1pt}}\nameref{#1}}} % ref with just name
 \newcommand{\secrefNum}[1]{\mbox{\hyperref[#1]{\S}\ref{#1}}} % ref with just num
 
-\newcommand{\secref}[1]{\secrefName{#1}} % choose method of section reference
+\newcommand{\secref}[1]{\secrefNumName{#1}} % choose method of section reference
 
 
 \newcommand{\eqnum}[1]{\ref*{#1}}
@@ -268,9 +270,11 @@
 
 
 \newcommand{\references}{
+    \fancyhead[L]{REFERENCES}
     \addcontentsline{toc}{section}{References}
     \setlength\bibitemsep{1.5\itemsep}
-    \printbibliography
+    \defbibheading{SpecialBibHeadingStyle}{\section*{References}}
+    \printbibliography[heading=SpecialBibHeadingStyle]
 }
 
 
@@ -278,7 +282,7 @@
 % Use at start of appendix section
 \newcommand{\appendices}{
     \appendix
-    \titleformat{\section}{\normalfont\LARGE\bfseries}{\thesection}{1em}{}
+    \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
     \fancyhead[L]{APPENDICES}
 
     \section*{Appendices}
@@ -388,7 +392,7 @@
 
 \let\cleardoublepage=\clearpage % stops random pages being printed after the ToC and titlepage
 
-% Sets the maximum number of levels in the Table of Contents to 3
+% Sets the maximum number of levels in the Table of Contents to x-1
 \setcounter{secnumdepth}{4}
 
 
