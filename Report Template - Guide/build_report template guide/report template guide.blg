@@ -1,9 +1,15 @@
 [0] Config.pm:306> INFO - This is Biber 2.18
 [0] Config.pm:309> INFO - Logfile is 'build_report template guide/report template guide.blg'
-[86] biber-MSWIN64:340> INFO - === 
-[117] Biber.pm:418> INFO - Reading 'build_report template guide/report template guide.bcf'
-[214] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
-[231] bbl.pm:654> INFO - Writing 'build_report template guide/report template guide.bbl' with encoding 'UTF-8'
-[231] bbl.pm:757> INFO - Output to build_report template guide/report template guide.bbl
-[231] Biber.pm:130> WARN - The file 'build_report template guide/report template guide.bcf' does not contain any citations!
-[231] Biber.pm:132> INFO - WARNINGS: 1
+[88] biber-MSWIN64:340> INFO - === 
+[119] Biber.pm:418> INFO - Reading 'build_report template guide/report template guide.bcf'
+[209] Biber.pm:978> INFO - Found 1 citekeys in bib section 0
+[220] Biber.pm:4401> INFO - Processing section 0
+[231] Biber.pm:4592> INFO - Looking for bibtex file 'references.bib' for section 0
+[285] bibtex.pm:1713> INFO - LaTeX decoding ...
+[296] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
+[325] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[325] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[325] Biber.pm:4221> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[325] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[326] bbl.pm:654> INFO - Writing 'build_report template guide/report template guide.bbl' with encoding 'UTF-8'
+[326] bbl.pm:757> INFO - Output to build_report template guide/report template guide.bbl
