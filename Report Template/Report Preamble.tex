@@ -80,6 +80,7 @@
 
 % Code Formatting Packages
 \usepackage{listings} % code text environment
+\usepackage{verbatim}
 
 
 % Graphics Formatting Packages
@@ -193,16 +194,29 @@
 % || ------------------------------- INTERNAL REFERENCING COMMANDS ------------------------------- ||
 % ---------------------------------------------------------------------------------------------------
 
-\newcommand{\secrefNameNum}[1]{\mbox{\hyperref[#1]{\S}\ref{#1}\hyperref[#1]{:\hspace{1pt}}\nameref{#1}}} % ref with Num:Name
+
+\newcommand{\secrefNumName}[1]{\mbox{\hyperref[#1]{\S}\ref{#1}\hyperref[#1]{:\hspace{1pt}}\nameref{#1}}} % ref with Num:Name
 \newcommand{\secrefName}[1]{\mbox{\hyperref[#1]{\S\hspace{1pt}}\nameref{#1}}} % ref with just name
 \newcommand{\secrefNum}[1]{\mbox{\hyperref[#1]{\S}\ref{#1}}} % ref with just num
 
 \newcommand{\secref}[1]{\secrefName{#1}} % choose method of section reference
-\newcommand{\appref}[1]{\mbox{\hyperref[#1]{Appendix\hspace{2pt}}\ref{#1}}}
-\renewcommand{\eqref}[1]{\mbox{\hyperref[#1]{Eq.\hspace{2pt}}\ref{#1}}}
+
+
 \newcommand{\eqnum}[1]{\ref*{#1}}
-\newcommand{\figref}[1]{\mbox{\hyperref[#1]{Fig.\hspace{2pt}}\ref{#1}}}
-\newcommand{\tableref}[1]{\mbox{\hyperref[#1]{Table \hspace{2pt}}\ref{#1}}}
+
+
+% Lower case commands
+\newcommand{\appref}[1]{\mbox{\hyperref[#1]{appendix\hspace{2pt}}\ref{#1}}}
+\renewcommand{\eqref}[1]{\mbox{\hyperref[#1]{equation\hspace{2pt}}\ref{#1}}}
+\newcommand{\figref}[1]{\mbox{\hyperref[#1]{figure\hspace{2pt}}\ref{#1}}}
+\newcommand{\tableref}[1]{\mbox{\hyperref[#1]{table\hspace{2pt}}\ref{#1}}}
+
+% Capitalised Commands
+\newcommand{\Appref}[1]{\mbox{\hyperref[#1]{Appendix\hspace{2pt}}\ref{#1}}}
+\newcommand{\Eqref}[1]{\mbox{\hyperref[#1]{Equation\hspace{2pt}}\ref{#1}}}
+\newcommand{\Figref}[1]{\mbox{\hyperref[#1]{Figure\hspace{2pt}}\ref{#1}}}
+\newcommand{\Tableref}[1]{\mbox{\hyperref[#1]{Table\hspace{2pt}}\ref{#1}}}
+
 
 % use \cite and \textcite to do references
 
@@ -349,15 +363,18 @@
         \fi
         
 
+        \vspace{\stretch{4}} % Fill the rest of the page with whitespace
+
         % DATE ----------------------------------------------------------------------------------------
         \if \@date \empty
         \else
             {\large ~\@date}\\ % Date, change the \today to a set date if you want to be precise
+            \vspace{4em}
         \fi
         
         
-
-        \vspace{\stretch{4}} % Fill the rest of the page with whitespace
+        
+        
         
         \end{titlepage}
 }
