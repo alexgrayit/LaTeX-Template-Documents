@@ -6,6 +6,8 @@ Within this repository are various example documents for common document types y
 
 [Report Template Guide](./Report%20Template%20-%20Guide/build_report%20template%20guide/report%20template%20guide.pdf)
 
+[Formula Sheet Template Guide](./Formula%20Sheet%20Template%20-%20Guide/build_Formula%20Sheet%20Template%20Guide/Formula%20Sheet%20Template%20Guide.pdf)
+
 ## General Guide to LaTeX
 
 There is also a very useful guide to LaTeX that, while somewhat long, can be very helpful to read if you're new to LaTeX.
