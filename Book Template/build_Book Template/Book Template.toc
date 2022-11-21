@@ -1,0 +1,16 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}Example Chapter}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}A Section}{1}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}A Subsection}{1}{subsection.1.1.1}%
+\contentsline {section}{\numberline {1.2}Another Section}{2}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Another Subsection}{2}{subsection.1.2.1}%
+\contentsline {chapter}{\numberline {I}Example Chapter}{3}{chapter.I}%
+\contentsline {section}{\numberline {I.1}A Section}{3}{section.I.1}%
+\contentsline {subsection}{\numberline {I.1.1}A Subsection}{3}{subsection.I.1.1}%
+\contentsline {section}{\numberline {I.2}Another Section}{4}{section.I.2}%
+\contentsline {subsection}{\numberline {I.2.1}Another Subsection}{4}{subsection.I.2.1}%
+\contentsline {chapter}{Appendices}{5}{appendix*.2}%
+\contentsline {section}{\numberline {A.1}Appendix 1}{5}{section.A.1}%
+\contentsline {subsection}{\numberline {A.1.1}A Subsection}{5}{subsection.A.1.1}%
+\contentsline {section}{\numberline {A.2}Appendix 2}{6}{section.A.2}%
+\contentsline {subsection}{\numberline {A.2.1}Another Subsection}{6}{subsection.A.2.1}%

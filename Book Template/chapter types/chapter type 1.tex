@@ -1,0 +1,24 @@
+% I hate that this has to be a block here and it can't go in the preamble, but such is life
+% Defines Chapter heading numbering to roman--------------------------------------------------------------------
+\renewcommand{\thechapter}{\arabic{chapter}} % Defines numbering for chapters as roman
+\renewcommand{\theHchapter}{\arabic{chapter}}
+
+\makeatletter
+\def\@makechapterhead#1{%
+\vspace*{\chaptertopskip}%
+{\parindent \z@ \raggedright \normalfont
+    \ifnum \c@secnumdepth >\m@ne
+    \if@mainmatter
+        \huge\bfseries Chapter\space \thechapter:\
+%        \par\nobreak
+%        \vskip 20\p@
+    \fi
+    \fi
+    \interlinepenalty\@M
+    \Huge \bfseries #1\par\nobreak
+    \vskip \chapterbottomskip
+}}
+\makeatother
+% See https://tex.stackexchange.com/questions/309920/how-to-move-the-chapter-title-upwards-on-page
+
+%-------------------------------------------------------------------------------------------------------------
