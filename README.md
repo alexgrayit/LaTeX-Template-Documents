@@ -8,10 +8,12 @@ Within this repository are various example documents for common document types y
 
 [Formula Sheet Template Guide](./Formula%20Sheet%20Template%20-%20Guide/build_Formula%20Sheet%20Template%20Guide/Formula%20Sheet%20Template%20Guide.pdf)
 
+Book Template Guide
+
 ## General Guide to LaTeX
 
 There is also a very useful guide to LaTeX that, while somewhat long, can be very helpful to read if you're new to LaTeX.
 
-[The Not So Short Introduction to LaTeX](https://mirror.aarnet.edu.au/pub/CTAN/info/lshort/english/lshort.pdf).
+[The Not So Short Introduction to LaTeX](https://mirror.aarnet.edu.au/pub/CTAN/info/lshort/english/lshort.pdf)
 
-[Documentation reference](https://www.ctan.org/tex-archive/info/lshort/).
+[Documentation reference](https://www.ctan.org/tex-archive/info/lshort/)

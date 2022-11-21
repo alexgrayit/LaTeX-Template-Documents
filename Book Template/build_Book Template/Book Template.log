@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.21)  21 NOV 2022 21:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.21)  21 NOV 2022 21:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1571,7 +1571,7 @@ Package fancyhdr Warning: \headheight is too small (15.2pt):
 
  (chapter types/Chapter Type References.tex)
 
-LaTeX Warning: Empty bibliography on input line 28.
+LaTeX Warning: Empty bibliography on input line 26.
 
 \openout2 = `"chapter types/Chapter Type Appendices.aux"'.
 
