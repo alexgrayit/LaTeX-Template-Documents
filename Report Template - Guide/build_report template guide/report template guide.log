@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.18)  21 NOV 2022 14:03
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.18)  21 NOV 2022 14:21
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1337,11 +1337,11 @@ Package biblatex Info: ... and expl3
 Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
 ))
 \tablegap=\skip136
-Package hyperref Info: Option `colorlinks' set `true' on input line 240.
+Package hyperref Info: Option `colorlinks' set `true' on input line 247.
  (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/bold-extra\bold-extra.sty
 Package: bold-extra 2001/11/13 v0.1 Use fonts from cm/mf-extra/bold
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 484.
+Package hyperref Info: Option `colorlinks' set `true' on input line 491.
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
