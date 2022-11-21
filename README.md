@@ -21,4 +21,7 @@ There is also a very useful guide to LaTeX that, while somewhat long, can be ver
 
 ## Using the Templates
 
-To use the templates you can either download the files and edit them in your IDE of choice, or you can [make a copy of the repository in your own GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository) and then open the repository in [Overleaf](https://www.overleaf.com/learn/how-to/Using_Git_and_GitHub) by linking your GitHub account to your Overleaf account.
+To use the templates you can either 
+- download the files and edit them in your IDE of choice,
+- download the template folder as a .zip and upload that to Overleaf or
+- [make a copy of the repository in your own GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository) and then [open the repository in Overleaf](https://www.overleaf.com/learn/how-to/Using_Git_and_GitHub) by linking your GitHub account to your Overleaf account.
