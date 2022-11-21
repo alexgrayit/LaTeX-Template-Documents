@@ -1,12 +1,12 @@
 # Fdb version 3
-["biber build_Book Template/Book Template"] 1669027647 "build_Book Template/Book Template.bcf" "build_Book Template/Book Template.bbl" "build_Book Template/Book Template" 1669039054
-  "build_Book Template/Book Template.bcf" 1669039053 106909 cbb55bd777734654851a81c60333dcda "pdflatex"
+["biber build_Book Template/Book Template"] 1669027647 "build_Book Template/Book Template.bcf" "build_Book Template/Book Template.bbl" "build_Book Template/Book Template" 1669041744
+  "build_Book Template/Book Template.bcf" 1669041744 106909 cbb55bd777734654851a81c60333dcda "pdflatex"
   (generated)
   "build_Book Template/Book Template.bbl"
   "build_Book Template/Book Template.blg"
-["pdflatex"] 1669039051 "e:/LaTeX Template Documents/Book Template/Book Template.tex" "build_Book Template/Book Template.pdf" "Book Template" 1669039054
-  "Book Preamble.tex" 1669033254 17518 855ba97c115e8d859c16706cd9fef4fa ""
-  "Book Template.tex" 1669039050 522 7e1c5b9a47e14d15f862f935ddacab52 ""
+["pdflatex"] 1669041741 "e:/LaTeX Template Documents/Book Template/Book Template.tex" "build_Book Template/Book Template.pdf" "Book Template" 1669041744
+  "Book Preamble.tex" 1669041355 17510 a66d59b2fb28aef89297c8e0d1c53689 ""
+  "Book Template.tex" 1669041741 520 f5ec0310209f872bf971acbcd22cc337 ""
   "C:/Users/Alex/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1668952632 294603 6523223a444f088db5b44b8fd7d12288 ""
   "C:/Users/Alex/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1669008116 10804102 1000733538fb44eecef53097d8b1ad6d ""
   "C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -334,21 +334,17 @@
   "C:/Users/Alex/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656240519 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/Alex/AppData/Local/Programs/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585221260 8510 7803f78066c4f9d008405191a4b43073 ""
   "C:/Users/Alex/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1626888562 123 a302f2c651a95033260db60e51527ae8 ""
-  "build_Book Template/Book Template.aux" 1669039053 6556 68e03365677b3bfad34b8b31948ee6c6 "pdflatex"
+  "build_Book Template/Book Template.aux" 1669041744 6370 7a1b66058a8299ccc3843b56c67cb32a "pdflatex"
   "build_Book Template/Book Template.bbl" 1669027649 486 ee04f40f768daeed26442158e95aba61 "biber build_Book Template/Book Template"
-  "build_Book Template/Book Template.run.xml" 1669039053 2507 70bf216cdc8188eae0d390e89d8e47bd "pdflatex"
-  "build_Book Template/Book Template.toc" 1669039053 1163 e2f8a46b03f85ac624042c13abb2e6f7 "pdflatex"
-  "build_Book Template/chapter types/Chapter Type 1.aux" 1669039053 4219 85807fa02c027198906ac615d12c5190 "pdflatex"
-  "build_Book Template/chapter types/Chapter Type 2.aux" 1669039053 4219 de49fb375ad8737f32cd12b18147f141 "pdflatex"
-  "build_Book Template/chapter types/Chapter Type Appendices.aux" 1669039053 4228 ab9d616a15cc8ec72355dc6ced09f228 "pdflatex"
-  "build_Book Template/chapter types/Chapter Type References.aux" 1669039053 4228 30679a7aa9660a9b98a0923f7f300708 "pdflatex"
+  "build_Book Template/Book Template.run.xml" 1669041744 2507 70bf216cdc8188eae0d390e89d8e47bd "pdflatex"
+  "build_Book Template/Book Template.toc" 1669041744 1163 e2f8a46b03f85ac624042c13abb2e6f7 "pdflatex"
   "chapter types/Chapter Type 1.tex" 1669027235 949 0d0448931566520c06c72c4b0b15a808 ""
   "chapter types/Chapter Type 2.tex" 1669027235 954 aea730ee36ff3c00eb19a5c6e40c1d81 ""
   "chapter types/Chapter Type Appendices.tex" 1669027235 672 5adc27e7fd6c717629707ac029cd28a8 ""
   "chapter types/Chapter Type References.tex" 1669027235 672 5adc27e7fd6c717629707ac029cd28a8 ""
   "chapters/Appendices.tex" 1669027235 907 cfb44db4cdee53ae09c89c753e8aa54a ""
   "chapters/Chapter Template.tex" 1669027235 396 6a1cf7eed1b360ed6336416a80182191 ""
-  "e:/LaTeX Template Documents/Book Template/Book Template.tex" 1669039050 522 7e1c5b9a47e14d15f862f935ddacab52 ""
+  "e:/LaTeX Template Documents/Book Template/Book Template.tex" 1669041741 520 f5ec0310209f872bf971acbcd22cc337 ""
   (generated)
   "build_Book Template/Book Template.aux"
   "build_Book Template/Book Template.bcf"
@@ -356,7 +352,3 @@
   "build_Book Template/Book Template.pdf"
   "build_Book Template/Book Template.run.xml"
   "build_Book Template/Book Template.toc"
-  "build_Book Template/chapter types/Chapter Type 1.aux"
-  "build_Book Template/chapter types/Chapter Type 2.aux"
-  "build_Book Template/chapter types/Chapter Type Appendices.aux"
-  "build_Book Template/chapter types/Chapter Type References.aux"

@@ -17,3 +17,11 @@ There is also a very useful guide to LaTeX that, while somewhat long, can be ver
 [The Not So Short Introduction to LaTeX](https://mirror.aarnet.edu.au/pub/CTAN/info/lshort/english/lshort.pdf)
 
 [Documentation reference](https://www.ctan.org/tex-archive/info/lshort/)
+
+
+## Using the Templates
+
+To use the templates you can either 
+- download the files and edit them in your IDE of choice,
+- download the template folder as a .zip and upload that to Overleaf or
+- [make a copy of the repository in your own GitHub](https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository) and then [open the repository in Overleaf](https://www.overleaf.com/learn/how-to/Using_Git_and_GitHub) by linking your GitHub account to your Overleaf account.
