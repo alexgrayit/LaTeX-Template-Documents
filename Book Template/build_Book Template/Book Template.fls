@@ -1771,18 +1771,6 @@ INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr12.t
 INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.aux
 INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.aux
 INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.aux
-INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type 1.aux
-INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type 1.aux
-INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type 1.aux
-INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type 2.aux
-INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type 2.aux
-INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type 2.aux
-INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type References.aux
-INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type References.aux
-INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type References.aux
-INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type Appendices.aux
-INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type Appendices.aux
-INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type Appendices.aux
 OUTPUT e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.aux
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -1892,11 +1880,6 @@ INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\eule
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\euler\eurm7.tfm
 OUTPUT e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.toc
 INPUT .\chapter types\Chapter Type 1.tex
-OUTPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type 1.aux
-INPUT .\chapter types\Chapter Type 1.tex
-INPUT .\chapter types\Chapter Type 1.tex
-INPUT .\chapter types\Chapter Type 1.tex
-INPUT .\chapter types\Chapter Type 1.tex
 INPUT chapter types\Chapter Type 1.tex
 INPUT .\chapter types\Chapter Type 1.tex
 INPUT chapter types\Chapter Type 1.tex
@@ -1908,34 +1891,19 @@ INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT .\chapter types\Chapter Type 2.tex
+INPUT chapter types\Chapter Type 2.tex
+INPUT .\chapter types\Chapter Type 2.tex
+INPUT chapter types\Chapter Type 2.tex
+INPUT .\chapters\Chapter Template.tex
+INPUT chapters\Chapter Template.tex
+INPUT .\chapters\Chapter Template.tex
+INPUT chapters\Chapter Template.tex
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmcsc10.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr10.tfm
-OUTPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type 2.aux
-INPUT .\chapter types\Chapter Type 2.tex
-INPUT .\chapter types\Chapter Type 2.tex
-INPUT .\chapter types\Chapter Type 2.tex
-INPUT .\chapter types\Chapter Type 2.tex
-INPUT chapter types\Chapter Type 2.tex
-INPUT .\chapter types\Chapter Type 2.tex
-INPUT chapter types\Chapter Type 2.tex
-INPUT .\chapters\Chapter Template.tex
-INPUT chapters\Chapter Template.tex
-INPUT .\chapters\Chapter Template.tex
-INPUT chapters\Chapter Template.tex
-INPUT .\chapter types\Chapter Type References.tex
-OUTPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type References.aux
-INPUT .\chapter types\Chapter Type References.tex
-INPUT .\chapter types\Chapter Type References.tex
-INPUT .\chapter types\Chapter Type References.tex
 INPUT .\chapter types\Chapter Type References.tex
 INPUT chapter types\Chapter Type References.tex
 INPUT .\chapter types\Chapter Type References.tex
 INPUT chapter types\Chapter Type References.tex
-INPUT .\chapter types\Chapter Type Appendices.tex
-OUTPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type Appendices.aux
-INPUT .\chapter types\Chapter Type Appendices.tex
-INPUT .\chapter types\Chapter Type Appendices.tex
-INPUT .\chapter types\Chapter Type Appendices.tex
 INPUT .\chapter types\Chapter Type Appendices.tex
 INPUT chapter types\Chapter Type Appendices.tex
 INPUT .\chapter types\Chapter Type Appendices.tex
@@ -1945,18 +1913,6 @@ INPUT chapters\Appendices.tex
 INPUT .\chapters\Appendices.tex
 INPUT chapters\Appendices.tex
 INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.aux
-INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type 1.aux
-INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type 1.aux
-INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type 1.aux
-INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type 2.aux
-INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type 2.aux
-INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type 2.aux
-INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type References.aux
-INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type References.aux
-INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type References.aux
-INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type Appendices.aux
-INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type Appendices.aux
-INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type Appendices.aux
 INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.run.xml
 OUTPUT e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.run.xml
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc

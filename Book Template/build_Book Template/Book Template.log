@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.21)  22 NOV 2022 00:57
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.21)  22 NOV 2022 01:35
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1361,11 +1361,11 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 5.
  (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.aux (e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types/Chapter Type 1.aux) (e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types/Chapter Type 2.aux)
+) (e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.aux
 
 LaTeX Warning: Label `ch: Example Chapter' multiply defined.
 
-(e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types/Chapter Type References.aux) (e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types/Chapter Type Appendices.aux))
+)
 \openout1 = `"Book Template.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
@@ -1524,10 +1524,7 @@ File: uesint.fd
 
  [1
 
-]
-\openout2 = `"chapter types/Chapter Type 1.aux"'.
-
- (chapter types/Chapter Type 1.tex) (chapters/Chapter Template.tex
+] (chapter types/Chapter Type 1.tex) (chapters/Chapter Template.tex
 Chapter 1.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
@@ -1537,39 +1534,19 @@ l.14         \newpage
                       [1
 
 
-
-
-
-]) [2]
-\openout2 = `"chapter types/Chapter Type 2.aux"'.
-
- (chapter types/Chapter Type 2.tex) (chapters/Chapter Template.tex
+]) (chapter types/Chapter Type 2.tex) (chapters/Chapter Template.tex [2]
 Chapter I.
 [3
 
-
-
-
-]) [4]
-\openout2 = `"chapter types/Chapter Type References.aux"'.
-
- (chapter types/Chapter Type References.tex)
+]) [4] (chapter types/Chapter Type References.tex)
 
 LaTeX Warning: Empty bibliography on input line 27.
 
-\openout2 = `"chapter types/Chapter Type Appendices.aux"'.
-
 (chapter types/Chapter Type Appendices.tex) (chapters/Appendices.tex [5
-
-
-
-
-
-
 
 ]) 
 AED: lastpage setting LastPage
-[6] (e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.aux (e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types/Chapter Type 1.aux) (e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types/Chapter Type 2.aux) (e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types/Chapter Type References.aux) (e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types/Chapter Type Appendices.aux))
+[6] (e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1578,10 +1555,10 @@ Package logreq Info: Writing requests to '"Book Template".run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 56140 strings out of 475285
- 1286805 string characters out of 2774591
- 2140438 words of memory out of 12000000
- 76638 multiletter control sequences out of 15000+600000
+ 56047 strings out of 475285
+ 1280845 string characters out of 2774591
+ 2129834 words of memory out of 12000000
+ 76562 multiletter control sequences out of 15000+600000
  522213 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,12n,85p,1202b,1897s stack positions out of 10000i,1000n,20000p,200000b,80000s

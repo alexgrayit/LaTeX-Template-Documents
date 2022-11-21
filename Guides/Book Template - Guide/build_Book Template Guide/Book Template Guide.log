@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.21)  22 NOV 2022 01:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.21)  22 NOV 2022 01:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1361,7 +1361,7 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 5.
  (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\Book Template Guide.aux (e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types/Chapter Type 1.aux) (e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types/Chapter Type References.aux) (e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types/Chapter Type Appendices.aux))
+) (e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\Book Template Guide.aux)
 \openout1 = `"Book Template Guide.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
@@ -1520,10 +1520,7 @@ Package biblatex Info: Reference segment=0 on input line 5.
 
  [1
 
-]
-\openout2 = `"chapter types/Chapter Type 1.aux"'.
-
- (chapter types/Chapter Type 1.tex) (chapters/Shared Commands with Report.tex
+] (chapter types/Chapter Type 1.tex) (chapters/Shared Commands with Report.tex
 Chapter 1.
 LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 11.
 (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmtt.fd
@@ -1538,9 +1535,6 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
                    \relax 
 l.46                 \newpage
                               [1
-
-
-
 
 
 ] [2] [3]
@@ -1564,18 +1558,9 @@ Overfull \hbox (3.08241pt too wide) in paragraph at lines 195--197
 Chapter 2.
 ) [6
 
-]
-\openout2 = `"chapter types/Chapter Type References.aux"'.
+] (chapter types/Chapter Type References.tex) [7
 
- (chapter types/Chapter Type References.tex) [7
-
-
-
-
-]
-\openout2 = `"chapter types/Chapter Type Appendices.aux"'.
-
- (chapter types/Chapter Type Appendices.tex) (chapters/Appendices.tex
+] (chapter types/Chapter Type Appendices.tex) (chapters/Appendices.tex
 <./images/LaTeX Logo.png, id=161, 2569.6pt x 1071.00125pt>
 File: ./images/LaTeX Logo.png Graphic file (type png)
 <use ./images/LaTeX Logo.png>
@@ -1585,19 +1570,16 @@ Package pdftex.def Info: ./images/LaTeX Logo.png  used on input line 25.
 AED: lastpage setting LastPage
 [8
 
-
-
-
- <./images/LaTeX Logo.png>] (e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\Book Template Guide.aux (e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types/Chapter Type 1.aux) (e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types/Chapter Type References.aux) (e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types/Chapter Type Appendices.aux))
+ <./images/LaTeX Logo.png>] (e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\Book Template Guide.aux)
 Package logreq Info: Writing requests to '"Book Template Guide".run.xml'.
 \openout1 = `"Book Template Guide.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 56906 strings out of 475285
- 1298634 string characters out of 2774591
- 2147852 words of memory out of 12000000
- 77334 multiletter control sequences out of 15000+600000
+ 56836 strings out of 475285
+ 1293768 string characters out of 2774591
+ 2139897 words of memory out of 12000000
+ 77277 multiletter control sequences out of 15000+600000
  572429 words of font info for 124 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,20n,85p,1223b,1832s stack positions out of 10000i,1000n,20000p,200000b,80000s

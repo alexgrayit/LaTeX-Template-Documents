@@ -1,12 +1,12 @@
 # Fdb version 3
-["biber build_Book Template Guide/Book Template Guide"] 1669033195 "build_Book Template Guide/Book Template Guide.bcf" "build_Book Template Guide/Book Template Guide.bbl" "build_Book Template Guide/Book Template Guide" 1669039931
-  "build_Book Template Guide/Book Template Guide.bcf" 1669039931 107055 8a2768b69b47b6c85c5226ad75a9f818 "pdflatex"
+["biber build_Book Template Guide/Book Template Guide"] 1669033195 "build_Book Template Guide/Book Template Guide.bcf" "build_Book Template Guide/Book Template Guide.bbl" "build_Book Template Guide/Book Template Guide" 1669041396
+  "build_Book Template Guide/Book Template Guide.bcf" 1669041396 107055 8a2768b69b47b6c85c5226ad75a9f818 "pdflatex"
   "references.bib" 1669032807 1614 115d1307ef6deb248ccbd8458dc32da6 ""
   (generated)
   "build_Book Template Guide/Book Template Guide.bbl"
   "build_Book Template Guide/Book Template Guide.blg"
-["pdflatex"] 1669039928 "e:/LaTeX Template Documents/Guides/Book Template - Guide/Book Template Guide.tex" "build_Book Template Guide/Book Template Guide.pdf" "Book Template Guide" 1669039931
-  "Book Preamble.tex" 1669033254 17501 1fadd2ea123efa3c67f104b45567e94d ""
+["pdflatex"] 1669041393 "e:/LaTeX Template Documents/Guides/Book Template - Guide/Book Template Guide.tex" "build_Book Template Guide/Book Template Guide.pdf" "Book Template Guide" 1669041396
+  "Book Preamble.tex" 1669041389 17493 a72c9ec829136f45dfc541bd9d59194d ""
   "Book Template Guide.tex" 1669031714 393 47d1bec031e52b387e80a7ea1202ab74 ""
   "C:/Users/Alex/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1668952632 294603 6523223a444f088db5b44b8fd7d12288 ""
   "C:/Users/Alex/AppData/Local/MiKTeX/fonts/pk/ljfour/public/esint/dpi720/esint10.pk" 1600359289 13864 6591450630c1127f902dc3b0d61939e1 ""
@@ -389,13 +389,10 @@
   "C:/Users/Alex/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656240519 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/Alex/AppData/Local/Programs/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585221260 8510 7803f78066c4f9d008405191a4b43073 ""
   "C:/Users/Alex/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1626888562 123 a302f2c651a95033260db60e51527ae8 ""
-  "build_Book Template Guide/Book Template Guide.aux" 1669039931 12037 6660c174d5388da3d5da0fe95999178a "pdflatex"
+  "build_Book Template Guide/Book Template Guide.aux" 1669041396 11893 7d377d3b8674cc7ac3376c93fda8342b "pdflatex"
   "build_Book Template Guide/Book Template Guide.bbl" 1669033197 1553 5b42bb15905fa7a5a4ff0c0d1900eaaa "biber build_Book Template Guide/Book Template Guide"
-  "build_Book Template Guide/Book Template Guide.run.xml" 1669039931 2549 b79ee1fe806fefbb6cf8112e54fa51ad "pdflatex"
-  "build_Book Template Guide/Book Template Guide.toc" 1669039931 1600 87018b8ce07e97a33f348a766eea81ca "pdflatex"
-  "build_Book Template Guide/chapter types/Chapter Type 1.aux" 1669039931 4219 85807fa02c027198906ac615d12c5190 "pdflatex"
-  "build_Book Template Guide/chapter types/Chapter Type Appendices.aux" 1669039931 4229 a0b6a767ef72ef79b565fc9b69e11b88 "pdflatex"
-  "build_Book Template Guide/chapter types/Chapter Type References.aux" 1669039931 4229 9d280d9f3a361a9e7f5e3f0cec12a6c2 "pdflatex"
+  "build_Book Template Guide/Book Template Guide.run.xml" 1669041396 2549 b79ee1fe806fefbb6cf8112e54fa51ad "pdflatex"
+  "build_Book Template Guide/Book Template Guide.toc" 1669041396 1600 87018b8ce07e97a33f348a766eea81ca "pdflatex"
   "chapter types/Chapter Type 1.tex" 1669027235 949 0d0448931566520c06c72c4b0b15a808 ""
   "chapter types/Chapter Type Appendices.tex" 1669027235 672 5adc27e7fd6c717629707ac029cd28a8 ""
   "chapter types/Chapter Type References.tex" 1669027235 672 5adc27e7fd6c717629707ac029cd28a8 ""
@@ -411,6 +408,3 @@
   "build_Book Template Guide/Book Template Guide.pdf"
   "build_Book Template Guide/Book Template Guide.run.xml"
   "build_Book Template Guide/Book Template Guide.toc"
-  "build_Book Template Guide/chapter types/Chapter Type 1.aux"
-  "build_Book Template Guide/chapter types/Chapter Type Appendices.aux"
-  "build_Book Template Guide/chapter types/Chapter Type References.aux"
