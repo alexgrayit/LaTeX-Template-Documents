@@ -1,0 +1,308 @@
+\documentclass[a4paper, 12pt, english]{article}
+\include{Formula Sheet Preamble.tex}
+
+
+
+\begin{document}
+    \pagenumbering{gobble} % turns off page numbering
+
+    \fullPageTitle
+    %\topTitle
+
+    \thispagestyle{noheader}
+    \tableofcontents
+
+    % \vspace{2em}
+    % \listoffigures
+
+    % \vspace{2em}
+    % \listoftables
+
+    \newpage
+    \pagenumbering{arabic} % restarts page numbering in arabic numerals
+
+    \section{What This Is}
+        \label{sec: what this is}
+        
+        Here I've used the \verb+Report Template.tex+ document to create a guide to said document. Below is a guide to how to edit the \LaTeX~if you are new, as well as the different commands that have been added on top of the default \LaTeX~commands.
+    
+
+    \section{The Custom Commands / Macros}
+        \label{sec: custom commands}
+
+        \subsection{Maths Commands}
+            \label{subsec: maths commands}
+
+            \verb+\begin{fleqn}+ $\cdots$\verb+\end{fleqn}+\\
+            Flush left equation environment, all equations are by default left aligned within this environment.
+
+            \verb+\eqexp{<explanation>}+\\
+            A custom macro that indents and italicises text such that when placed below an equation it can be used to provide an explanation of what that equation does.
+
+            \verb+\d+ \footnote{overrides underdot accent.}\\
+            A different font `d' for integrals.
+            \begin{equation*}
+                x = \int v_x \d x
+            \end{equation*}
+
+            \verb+\ud+\\
+            A different font `d' for integrals with a space.
+            \begin{equation*}
+                x = \int v_x \ud x
+            \end{equation*}
+
+            \verb+\Reals+ $\Reals$
+            
+            \verb+\Complexs+ $\Complexs$
+            
+            \verb+\Integers+ $\Integers$
+            
+            \verb+\Naturals+ $\Naturals$
+            
+            \verb+\Rationals+ $\Rationals$ 
+
+            \verb+\Primes+ $\Primes$
+
+            \verb+\emf+ $\emf$
+
+            \verb+\deq+ $\deq$
+
+            \verb+\bfrac{}+ and \verb+\bint{}+\\
+            Commands that force sizing of fractions and integrals to be big.
+            
+            \verb+\vect{}+ and \verb+\vhat{}+\\
+            Custom vector formatting e.g. $\vect{v}$ and $\vhat{v}$.
+
+            \verb+\hvec{}+\\
+            Vector with harpoon accent e.g. $\hvec{v}$
+
+            \verb+\svec{}+\\
+            Vector with squiggle accent e.g. $\svec{v}$
+
+            \verb+\bvec{}+\\
+            Vector with bold text e.g. $\bvec{v}$.
+
+            \verb+\lhvec{}+ and \verb+\lvect{}+\\
+            A long vector with harpoon accent e.g. $\lhvec{AB}$ and $\lvect{AB}$.
+
+            \verb+\vmod{}+\\
+            Vector modulus notation e.g. \verb+\vmod{x}+ = $\vmod{x}$.
+
+            \verb+\Matrix{}+\\
+            Shortcut for matrix environment surrounded by square brackets e.g. \verb+\Matrix{1 & 2 \\ 3 & 4}+
+            \begin{equation*}
+                \Matrix{1 & 2 \\ 3 & 4}
+            \end{equation*}
+
+            \verb+\proj{a}{b}+\\
+            Projection of $a$ onto $b$ e.g. $\proj{a}{b}$
+
+
+        \subsection{Multi-Column Commands}
+            \label{subsec: multi column commands}
+
+            \verb+\begin{paracol}{2}+ $\cdots$\verb+\end{paracol}+\\
+            A paragraph column environment, has better text alignment that other packages in the use case of formula sheets.
+
+            \verb+\switchcolumn+\\
+            Switches the column you're typing in.
+
+            \verb+\newpage+\\
+            Pushes text to the next page {\bfseries only in the current column}.
+
+            \verb+\alignColumns+\\
+            A custom macro that aligns the other column to the current vertical alignment of the current column.
+
+        \newpage
+
+        
+        \subsection{Cross Referencing Other Sections}
+            \label{subsec: cross referencing}
+
+            Internal cross referencing allows you to refer the reader to another part of the document using the corresponding \verb+\label+. The default \LaTeX commands are not terrible but by default it only generates a hyperlinked form of the number of whatever you're referring to. Instead we can use the commands below.
+
+            \verb+\secref{<label>}+\\
+            This references a section by number and name e.g. \secref{sec: editing the preamble}.\\
+            This can also be changed to just reference by just number or name by changing the line in the preamble from \verb+\newcommand{\secref}[1]{\secrefNumName{#1}}+ to:\\
+            \verb+\newcommand{\secref}[1]{\secrefNum{#1}}+ $\rightarrow$ \secrefNum{sec: editing the preamble}\\
+            \verb+\newcommand{\secref}[1]{\secrefName{#1}}+ $\rightarrow$ \secrefName{sec: editing the preamble}
+            
+            \verb+\figref{<label>}+ or \verb+\Figref{<label>}+\\
+            This generates a cross reference to a figure, \verb+\Figref+ capitalises the word ``Figure''. E.g. there is \figref{fig: latex logo} or \Figref{fig: latex logo}.
+
+            \verb+\eqref{<label>}+ or \verb+\Eqref{<label>}+\\
+            This generates a cross reference to an equation, \verb+\Eqref+ capitalises the word ``Equation''. E.g. there is \eqref{eq: Gauss Law} or \Eqref{eq: Gauss Law}.
+
+            \verb+\tableref{<label>}+ or \verb+\Tableref{<label>}+\\
+            This generates a cross reference to a table, \verb+\Table+ capitalises the word ``Table''. E.g. there is \tableref{table: example} or \Tableref{table: example}.
+
+            \verb+\appref{<label>}+ or \verb+\Appref{<label>}+\\
+            This generates a cross reference to an appendix, \verb+\Appref+ capitalises the word ``Appendix''. E.g. there is \appref{app: example figure} or \Appref{app: example figure}.
+
+            \verb+\eqnum{<label>}+\\
+            Just grabs the number of an equation. If you want to repeat an equation but keep the original number you can use \verb+\tag{\eqnum{<label>}}+ where \verb+<label>+ is the label of the original equation.
+
+        \newpage
+
+        \subsection{Creating References and Appendices}
+            \label{subsec: creating references and appendices}
+
+            To streamline creating the references list and appendices there are two commands:
+
+            \verb+\references+\\
+            This prints the list of (cited\footnote{\LaTeX~uses the \BibTeX~engine to generate references. The advantage is you can have a big file of references and it does all the styling for you, the downside is that it only adds to the referencing list the ones that you in-text cite.}) references and adds a line to the table of contents for the references. To change the referencing style change the line \\\verb+\usepackage[backend=biber, style=ieee]{biblatex}+. See \textcite{referencing-styles} for other styles.
+
+            \verb+\appendices+\\
+            This starts the appendices section, changes the header and reformats the titles so that subsections look like sections etc. This is because to get the numbering correct each appendix has to be a subsection.
+
+
+        \subsection{Title Page Commands}
+            \label{subsec: title page commands}
+
+            There are two titlepage commands that can be used:
+
+            \verb+\fullPageTitle+\\
+            Creates full title page as is in this document. To customise the titlepage edit the parameters in the preamble as per \secref{subsec: the parameters and what they do}.
+
+            \verb+\topTitle+\\
+            Creates a title at the top of the page. This is intended for scientific reports which are typically more understated with an abstract below the title.
+
+
+        \subsection{Extra Section Command}
+            \label{subsec: extra section command}
+
+            Typically \LaTeX~only allows 3 levels of sections: \verb+\section+, \verb+\subsection+ and \verb+\subsubsection+. I have added a 4\super{th} command \verb+\subsubsubsection+.
+
+
+        \subsection{Superscript and Subscript}
+            \label{subsec: superscript and subscript}
+
+            Shortcuts for superscript and subscript in text \verb+\super{}+ and \verb+\sub{}+.\\
+            E.g. \verb+1\super{st}+ $\to$ 1\super{st} and \verb+12\sub{dec}+ $\to$ 12\sub{dec}.
+
+
+        
+    \section{Editing the Preamble and Titlepage}
+        \label{sec: editing the preamble}
+
+        To edit the preamble (provided you're somewhat new to \LaTeX) scroll to the bottom of \\\verb+Report Preamble.tex+ until you see the comment:
+
+        \begin{lstlisting}
+% -------------------------------------------------------------
+%   --- New LaTeX users feel free to edit what is below ---   |
+% -------------------------------------------------------------
+        \end{lstlisting}
+
+
+
+        \subsection{The Parameters and What They Do}
+            \label{subsec: the parameters and what they do}
+
+            \verb+\newcommand{\Uni}{The University of Sydney}+\\
+            This command edits part of the header of the titlepage. Edit the second field to change the header, making it empty removes that part of the header.
+
+            \verb+\newcommand{\School}{School of Aerospace Mechanical and Mechatronics Engineering}+\\
+            This command edits part of the header of the titlepage. Edit the second field to change the header, making it empty removes that part of the header.
+
+            \verb+\newcommand{\Unit}{Unit Code}+\\
+            This command edits part of the body of the titlepage. Edit the second field to change the text, making it empty removes that part of the titlepage.
+
+            \verb+\newcommand{\Class}{Class Time}+\\
+            This command edits part of the body of the titlepage. Edit the second field to change the text, making it empty removes that part of the titlepage.
+
+            \verb+\newcommand{\Assignment}{Assignment Name}+\\
+            This changes the title of the titlepage. Edit the second field to change the text.
+
+            \verb+\newcommand{\SID}{123456789}+\\
+            This edits your student ID that appears in the headers.
+
+            \verb+\author{Author 1 \\[0.5em] Author 2 \\[0.5em] Author 3 \\}+\\
+            This edits the author field on the titlepage. To add a new author add a \verb+\\+ between names. To increase the spacing change it to a \verb+\\[<extra spacing>]+ e.g. \verb+\\[2mm]+.
+
+            \verb+\date{}+\\
+            This adds the date to the titlepage. If the field is empty it doesn't add it to the page. Making the field \verb+\today+ automatically changes the field to the date of compilation.
+
+            \newpage
+
+            %More complex commands
+            \verb+\title{\Assignment}+\\
+            Changes the title field. By default uses the \verb+\Assignment+ macro but can be edited to add extra text. (\LaTeX~tries to outsmart you if you add text after a command by removing the space between the command text and the new text, use a ``\verb+~+'' e.g. \verb+\Assignment~extra text+ to force it to add text.)
+
+            \verb+\numberwithin{equation}{section}+\\
+            Changes the numbering of equations. As above it numbers them as (\verb+<sec num>.<eq num>+) where the equation number counter gets reset at the start of each section. To just number them by equation (ignoring sections) make the second field empty.
+
+            \verb+\setlength{\parindent}{0em}+\\
+            This sets the indent at the start of a paragraph. \LaTeX treats a new paragraph as starting whenever within your \verb+.tex+ file there is an empty line followed by new text. By default \LaTeX indents the first line of this new text, changing the second field changes this indent.
+
+            \verb+\setlength{\parskip}{1em}+\\
+            This sets the length of a space between paragraphs. LaTeX treats a new paragraph as starting whenever within your \verb+.tex+ file there is an empty line followed by new text. By default \LaTeX doesn't add any space between paragraphs, changing the second field changes the spacing between paragraphs.
+
+            \verb+\newcommand{\headercase}[1]{\scshape\nouppercase{#1}}+\\
+            Macro for controlling the header style, takes the header text as its argument. \verb+\scshape+ sets it to small caps, you can change this or add multiple styles. Other options include \verb+\itshape+ ({\itshape italic}), \verb+\bfseries+ ({\bfseries bold}) and \verb+\slshape+ ({\slshape slanted}).\\
+            Remove the \verb+\nouppercase+ command to force it to all uppercase.
+
+            \verb+\fancyhead[L]{\headercase{\leftmark}}+\\
+            This changes the left side of the header. \verb+\leftmark+ contains the last section that is started on a given page, \verb+\rightmark+ contains the last heading (i.e. including subsections etc.) that is started on a given page.
+
+            \verb+\fancyhead[R]{\SID}+\\
+            Changes the right side of the header. By default uses the custom macro \verb+\SID+ but can be changed.
+
+            \verb+\fancyfoot[C]{\small\thepage}+\\
+            Changes the centre of the footer, by default adds the page number with \verb+\thepage+.
+
+
+    \newpage
+
+    \pagenumbering{roman}
+
+
+    \references
+
+    \newpage
+
+
+    \appendices
+
+        \subsection{Example Figure}
+            \label{app: example figure}
+
+            \begin{figure}[!h]
+                \centering
+                \includegraphics[width=0.5\textwidth]{LaTeX Logo.png}    
+
+                \caption{The \LaTeX~logo. Figure captions typically go below a figure.}
+                \label{fig: latex logo}
+            \end{figure}
+
+            \FloatBarrier
+
+        \subsection{Example Table}
+            \label{app: example table}
+
+            \begin{table}[!h]
+                \centering
+                \caption{An example table. Table captions typically go above a table.}
+                \label{table: example}
+                \begin{tabular}{ |C{0.2\textwidth}|m{0.2\textwidth}| }
+                    \hline
+                    Test & text\\
+                    \hline
+                    \hline
+                    Test & text\\
+                    \hline
+                    Test & text\\
+                    \hline
+                \end{tabular}
+            \end{table}
+
+        \subsection{Example Equation}
+            \label{app: example equation}
+
+            \begin{equation}
+                \oiint_S \vect{E} \cdot \d\vect{A} = \frac{Q_{\text{enc}}}{\varepsilon_0}
+                \label{eq: Gauss Law}
+            \end{equation}
+
+            
+            
+\end{document}

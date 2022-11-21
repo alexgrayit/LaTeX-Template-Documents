@@ -1,0 +1,17 @@
+\babel@toc {english}{}\relax 
+\contentsline {section}{\numberline {1}What This Is}{1}{section.1}%
+\contentsline {section}{\numberline {2}The Custom Commands / Macros}{1}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Maths Commands}{1}{subsection.2.1}%
+\contentsline {subsection}{\numberline {2.2}Multi-Column Commands}{2}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Cross Referencing Other Sections}{3}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Creating References and Appendices}{4}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.5}Title Page Commands}{4}{subsection.2.5}%
+\contentsline {subsection}{\numberline {2.6}Extra Section Command}{4}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.7}Superscript and Subscript}{4}{subsection.2.7}%
+\contentsline {section}{\numberline {3}Editing the Preamble and Titlepage}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}The Parameters and What They Do}{5}{subsection.3.1}%
+\contentsline {section}{References}{i}{subsection.3.1}%
+\contentsline {section}{Appendices}{ii}{subsection.3.1}%
+\contentsline {subsection}{\numberline {A.1}Example Figure}{ii}{subsection.A.1}%
+\contentsline {subsection}{\numberline {A.2}Example Table}{ii}{subsection.A.2}%
+\contentsline {subsection}{\numberline {A.3}Example Equation}{ii}{subsection.A.3}%

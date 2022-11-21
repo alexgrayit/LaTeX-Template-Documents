@@ -1,0 +1,15 @@
+[0] Config.pm:306> INFO - This is Biber 2.18
+[0] Config.pm:309> INFO - Logfile is 'build_Formula Sheet Template Guide/Formula Sheet Template Guide.blg'
+[85] biber-MSWIN64:340> INFO - === 
+[117] Biber.pm:418> INFO - Reading 'build_Formula Sheet Template Guide/Formula Sheet Template Guide.bcf'
+[204] Biber.pm:978> INFO - Found 1 citekeys in bib section 0
+[214] Biber.pm:4401> INFO - Processing section 0
+[224] Biber.pm:4592> INFO - Looking for bibtex file 'references.bib' for section 0
+[276] bibtex.pm:1713> INFO - LaTeX decoding ...
+[283] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
+[308] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[308] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[308] Biber.pm:4221> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[308] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[309] bbl.pm:654> INFO - Writing 'build_Formula Sheet Template Guide/Formula Sheet Template Guide.bbl' with encoding 'UTF-8'
+[309] bbl.pm:757> INFO - Output to build_Formula Sheet Template Guide/Formula Sheet Template Guide.bbl
