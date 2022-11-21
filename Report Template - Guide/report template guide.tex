@@ -77,10 +77,10 @@
             Changes the numbering of equations. As above it numbers them as (\verb+<sec num>.<eq num>+) where the equation number counter gets reset at the start of each section. To just number them by equation (ignoring sections) make the second field empty.
 
             \verb+\setlength{\parindent}{0em}+\\
-            This sets the indent at the start of a paragraph. \LaTeX treats a new paragraph as starting whenever within your \verb+.tex+ file there is an empty line followed by new text. By default \LaTeX indents the first line of this new text, changing the second field changes this indent.
+            This sets the indent at the start of a paragraph. \LaTeX~treats a new paragraph as starting whenever within your \verb+.tex+ file there is an empty line followed by new text. By default \LaTeX~indents the first line of this new text, changing the second field changes this indent.
 
             \verb+\setlength{\parskip}{1em}+\\
-            This sets the length of a space between paragraphs. LaTeX treats a new paragraph as starting whenever within your \verb+.tex+ file there is an empty line followed by new text. By default \LaTeX doesn't add any space between paragraphs, changing the second field changes the spacing between paragraphs.
+            This sets the length of a space between paragraphs. LaTeX treats a new paragraph as starting whenever within your \verb+.tex+ file there is an empty line followed by new text. By default \LaTeX~doesn't add any space between paragraphs, changing the second field changes the spacing between paragraphs.
 
             \verb+\newcommand{\headercase}[1]{\scshape\nouppercase{#1}}+\\
             Macro for controlling the header style, takes the header text as its argument. \verb+\scshape+ sets it to small caps, you can change this or add multiple styles. Other options include \verb+\itshape+ ({\itshape italic}), \verb+\bfseries+ ({\bfseries bold}) and \verb+\slshape+ ({\slshape slanted}).\\
@@ -103,7 +103,7 @@
         \subsection{Cross Referencing Other Sections}
             \label{subsec: cross referencing}
 
-            Internal cross referencing allows you to refer the reader to another part of the document using the corresponding \verb+\label+. The default \LaTeX commands are not terrible but by default it only generates a hyperlinked form of the number of whatever you're referring to. Instead we can use the commands below.
+            Internal cross referencing allows you to refer the reader to another part of the document using the corresponding \verb+\label+. The default \LaTeX~commands are not terrible but by default it only generates a hyperlinked form of the number of whatever you're referring to. Instead we can use the commands below.
 
             \verb+\secref{<label>}+\\
             This references a section by number and name e.g. \secref{sec: editing the preamble}.\\
