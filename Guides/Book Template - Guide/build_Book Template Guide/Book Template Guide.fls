@@ -1,7 +1,7 @@
-PWD e:\LaTeX Template Documents\Book Template - Guide
+PWD e:\LaTeX Template Documents\Guides\Book Template - Guide
 INPUT C:\Users\Alex\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT e:\LaTeX Template Documents\Book Template - Guide\Book Template Guide.tex
-OUTPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\Book Template Guide.log
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\Book Template Guide.tex
+OUTPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\Book Template Guide.log
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\base\book.cls
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\base\book.cls
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\base\book.cls
@@ -1768,19 +1768,19 @@ INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmr.fd
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmr.fd
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmr.fd
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\Book Template Guide.aux
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\Book Template Guide.aux
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\Book Template Guide.aux
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type 1.aux
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type 1.aux
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type 1.aux
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type References.aux
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type References.aux
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type References.aux
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type Appendices.aux
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type Appendices.aux
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type Appendices.aux
-OUTPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\Book Template Guide.aux
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\Book Template Guide.aux
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\Book Template Guide.aux
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\Book Template Guide.aux
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type 1.aux
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type 1.aux
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type 1.aux
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type References.aux
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type References.aux
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type References.aux
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type Appendices.aux
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type Appendices.aux
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type Appendices.aux
+OUTPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\Book Template Guide.aux
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -1802,7 +1802,7 @@ INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sy
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
-OUTPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\Book Template Guide.pdf
+OUTPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\Book Template Guide.pdf
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-english.trsl
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-english.trsl
@@ -1811,13 +1811,13 @@ INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\t
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\english.lbx
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\english.lbx
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\english.lbx
-OUTPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\Book Template Guide.bcf
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\Book Template Guide.bbl
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\Book Template Guide.bbl
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\Book Template Guide.bbl
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\Book Template Guide.bbl
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\Book Template Guide.bbl
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\Book Template Guide.bbl
+OUTPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\Book Template Guide.bcf
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\Book Template Guide.bbl
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\Book Template Guide.bbl
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\Book Template Guide.bbl
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\Book Template Guide.bbl
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\Book Template Guide.bbl
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\Book Template Guide.bbl
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmr.fd
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmr.fd
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\lm\ot1lmr.fd
@@ -1885,13 +1885,13 @@ INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr12.t
 INPUT C:\Users\Alex\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr17.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\Book Template Guide.toc
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\Book Template Guide.toc
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\Book Template Guide.toc
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\Book Template Guide.toc
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\Book Template Guide.toc
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\Book Template Guide.toc
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
-OUTPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\Book Template Guide.toc
+OUTPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\Book Template Guide.toc
 INPUT .\chapter types\Chapter Type 1.tex
-OUTPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type 1.aux
+OUTPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type 1.aux
 INPUT .\chapter types\Chapter Type 1.tex
 INPUT .\chapter types\Chapter Type 1.tex
 INPUT .\chapter types\Chapter Type 1.tex
@@ -1969,7 +1969,7 @@ INPUT chapters\Book Commands.tex
 INPUT .\chapters\Book Commands.tex
 INPUT chapters\Book Commands.tex
 INPUT .\chapter types\Chapter Type References.tex
-OUTPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type References.aux
+OUTPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type References.aux
 INPUT .\chapter types\Chapter Type References.tex
 INPUT .\chapter types\Chapter Type References.tex
 INPUT .\chapter types\Chapter Type References.tex
@@ -1978,7 +1978,7 @@ INPUT chapter types\Chapter Type References.tex
 INPUT .\chapter types\Chapter Type References.tex
 INPUT chapter types\Chapter Type References.tex
 INPUT .\chapter types\Chapter Type Appendices.tex
-OUTPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type Appendices.aux
+OUTPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type Appendices.aux
 INPUT .\chapter types\Chapter Type Appendices.tex
 INPUT .\chapter types\Chapter Type Appendices.tex
 INPUT .\chapter types\Chapter Type Appendices.tex
@@ -2000,25 +2000,25 @@ INPUT .\images\LaTeX Logo.png
 INPUT .\images\LaTeX Logo.png
 INPUT .\images\LaTeX Logo.png
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr6.tfm
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\Book Template Guide.aux
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type 1.aux
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type 1.aux
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type 1.aux
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type References.aux
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type References.aux
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type References.aux
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type Appendices.aux
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type Appendices.aux
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type Appendices.aux
-INPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\Book Template Guide.run.xml
-OUTPUT e:\LaTeX Template Documents\Book Template - Guide\build_Book Template Guide\Book Template Guide.run.xml
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\Book Template Guide.aux
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type 1.aux
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type 1.aux
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type 1.aux
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type References.aux
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type References.aux
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type References.aux
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type Appendices.aux
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type Appendices.aux
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\chapter types\Chapter Type Appendices.aux
+INPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\Book Template Guide.run.xml
+OUTPUT e:\LaTeX Template Documents\Guides\Book Template - Guide\build_Book Template Guide\Book Template Guide.run.xml
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
+INPUT C:\Users\Alex\AppData\Local\MiKTeX\fonts\pk\ljfour\public\esint\dpi720\esint10.pk
+INPUT C:\Users\Alex\AppData\Local\MiKTeX\fonts\pk\ljfour\public\esint\dpi720\esint10.pk
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
-INPUT C:\Users\Alex\AppData\Local\MiKTeX\fonts\pk\ljfour\public\esint\dpi720\esint10.pk
-INPUT C:\Users\Alex\AppData\Local\MiKTeX\fonts\pk\ljfour\public\esint\dpi720\esint10.pk
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ts1.enc
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbsy10.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmbsy10.pfb

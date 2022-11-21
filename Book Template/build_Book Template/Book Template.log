@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.21)  21 NOV 2022 23:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.21)  22 NOV 2022 00:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1344,14 +1344,14 @@ Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
 \myboxA=\box155
 \myboxB=\box156
 \mylenA=\skip135
-Package hyperref Info: Option `colorlinks' set `true' on input line 272.
+Package hyperref Info: Option `colorlinks' set `true' on input line 274.
 \beforechapskip=\skip136
 \chaptertopskip=\skip137
 \chapterbottomskip=\skip138
  (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/bold-extra\bold-extra.sty
 Package: bold-extra 2001/11/13 v0.1 Use fonts from cm/mf-extra/bold
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 523.
+Package hyperref Info: Option `colorlinks' set `true' on input line 525.
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1555,7 +1555,7 @@ Chapter I.
 
  (chapter types/Chapter Type References.tex)
 
-LaTeX Warning: Empty bibliography on input line 26.
+LaTeX Warning: Empty bibliography on input line 27.
 
 \openout2 = `"chapter types/Chapter Type Appendices.aux"'.
 
@@ -1578,10 +1578,10 @@ Package logreq Info: Writing requests to '"Book Template".run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 56138 strings out of 475285
- 1286791 string characters out of 2774591
- 2140347 words of memory out of 12000000
- 76636 multiletter control sequences out of 15000+600000
+ 56140 strings out of 475285
+ 1286805 string characters out of 2774591
+ 2140438 words of memory out of 12000000
+ 76638 multiletter control sequences out of 15000+600000
  522213 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,12n,85p,1202b,1897s stack positions out of 10000i,1000n,20000p,200000b,80000s

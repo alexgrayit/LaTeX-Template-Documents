@@ -140,20 +140,6 @@
             \subsection{Maths Commands}
                 \label{subsec: maths commands}
 
-                \verb+\d+ \footnote{overrides underdot accent.}\\
-                A different font `d' for integrals.
-                \begin{equation*}
-                    x = \int v_x \d x
-                \end{equation*}
-
-                \newpage
-
-                \verb+\ud+\\
-                A different font `d' for integrals with a space.
-                \begin{equation*}
-                    x = \int v_x \ud x
-                \end{equation*}
-
                 \verb+\Reals+ $\Reals$
                 
                 \verb+\Complexs+ $\Complexs$
@@ -169,6 +155,18 @@
                 \verb+\emf+ $\emf$
 
                 \verb+\deq+ $\deq$
+
+                \verb+\d+ \footnote{overrides underdot accent.}\\
+                A different font `d' for integrals.
+                \begin{equation*}
+                    x = \int v_x \d x
+                \end{equation*}
+
+                \verb+\ud+\\
+                A different font `d' for integrals with a space.
+                \begin{equation*}
+                    x = \int v_x \ud x
+                \end{equation*}
 
                 \verb+\bfrac{}+ and \verb+\bint{}+\\
                 Commands that force sizing of fractions and integrals to be big.
@@ -190,6 +188,9 @@
 
                 \verb+\vmod{}+\\
                 Vector modulus notation e.g. \verb+\vmod{x}+ = $\vmod{x}$.
+
+                \verb+\xoverline{<x>}+ or \verb+\xoverline[<width fraction>]{<x>}+\\
+                Places a line over \verb+<x>+ with optional argument \verb+<width fraction>+ e.g. \verb+\xoverline{x}+ = $\xoverline{x}$ or \verb+\xoverline[0.5]{average}+ = $\xoverline[0.5]{average}$.
 
                 \verb+\Matrix{}+\\
                 Shortcut for matrix environment surrounded by square brackets e.g. \verb+\Matrix{1 & 2 \\ 3 & 4}+

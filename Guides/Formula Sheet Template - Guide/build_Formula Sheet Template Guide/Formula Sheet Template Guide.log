@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.21)  21 NOV 2022 23:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.21)  22 NOV 2022 01:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"e:/LaTeX Template Documents/Formula Sheet Template - Guide/Formula Sheet Template Guide.tex"
-(e:/LaTeX Template Documents/Formula Sheet Template - Guide/Formula Sheet Template Guide.tex
+**"e:/LaTeX Template Documents/Guides/Formula Sheet Template - Guide/Formula Sheet Template Guide.tex"
+(e:/LaTeX Template Documents/Guides/Formula Sheet Template - Guide/Formula Sheet Template Guide.tex
 LaTeX2e <2022-11-01>
 L3 programming layer <2022-11-02> (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -1336,21 +1336,24 @@ Package biblatex Info: ... and expl3
 Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
 ))
 \tablegap=\skip136
-Package hyperref Info: Option `colorlinks' set `true' on input line 248.
+\myboxA=\box155
+\myboxB=\box156
+\mylenA=\skip137
+Package hyperref Info: Option `colorlinks' set `true' on input line 269.
  (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/bold-extra\bold-extra.sty
 Package: bold-extra 2001/11/13 v0.1 Use fonts from cm/mf-extra/bold
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 499.
+Package hyperref Info: Option `colorlinks' set `true' on input line 521.
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
-\tikzscale@accuracy=\skip137
+\tikzscale@accuracy=\skip138
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 6.
  (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (e:\LaTeX Template Documents\Formula Sheet Template - Guide\build_Formula Sheet Template Guide\Formula Sheet Template Guide.aux)
+) (e:\LaTeX Template Documents\Guides\Formula Sheet Template - Guide\build_Formula Sheet Template Guide\Formula Sheet Template Guide.aux)
 \openout1 = `"Formula Sheet Template Guide.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
@@ -1375,7 +1378,7 @@ LaTeX Font Info:    ... okay on input line 6.
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count519
 \scratchdimen=\dimen377
-\scratchbox=\box155
+\scratchbox=\box157
 \nofMPsegments=\count520
 \nofMParguments=\count521
 \everyMPshowfont=\toks50
@@ -1466,7 +1469,7 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file '"Formula Sheet Template Guide".bbl' found.
- (e:\LaTeX Template Documents\Formula Sheet Template - Guide\build_Formula Sheet Template Guide\Formula Sheet Template Guide.bbl
+ (e:\LaTeX Template Documents\Guides\Formula Sheet Template - Guide\build_Formula Sheet Template Guide\Formula Sheet Template Guide.bbl
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 42.
  (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1505,7 +1508,7 @@ Package biblatex Info: Reference section=0 on input line 6.
 Package biblatex Info: Reference segment=0 on input line 6.
  [1
 
-{C:/Users/Alex/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (e:\LaTeX Template Documents\Formula Sheet Template - Guide\build_Formula Sheet Template Guide\Formula Sheet Template Guide.toc)
+{C:/Users/Alex/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}] (e:\LaTeX Template Documents\Guides\Formula Sheet Template - Guide\build_Formula Sheet Template Guide\Formula Sheet Template Guide.toc)
 \tf@toc=\write5
 \openout5 = `"Formula Sheet Template Guide.toc"'.
 
@@ -1530,42 +1533,42 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 44.
 [1]
-Overfull \hbox (3.08241pt too wide) in paragraph at lines 95--97
+Overfull \hbox (3.08241pt too wide) in paragraph at lines 98--100
 []\T1/lmr/m/n/12 Shortcut for ma-trix en-vi-ron-ment sur-rounded by square brack-ets e.g. [][]\T1/lmtt/m/n/12 \Matrix{1 & 2 \\ 3 & 4} 
  []
 
 [2] [3]
-Overfull \hbox (4.6441pt too wide) in paragraph at lines 160--162
+Overfull \hbox (4.6441pt too wide) in paragraph at lines 163--165
 []\T1/lmr/m/n/12 This starts the ap-pen-dices sec-tion, changes the header and re-for-mats the ti-tles so that sub-sec-tions
  []
 
 [4]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 197.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 200.
  (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [5] [6] [1]
 <./images/LaTeX Logo.png, id=139, 2569.6pt x 1071.00125pt>
 File: ./images/LaTeX Logo.png Graphic file (type png)
 <use ./images/LaTeX Logo.png>
-Package pdftex.def Info: ./images/LaTeX Logo.png  used on input line 280.
+Package pdftex.def Info: ./images/LaTeX Logo.png  used on input line 283.
 (pdftex.def)             Requested size: 241.84843pt x 100.79832pt.
  
 AED: lastpage setting LastPage
-[2 <./images/LaTeX Logo.png>] (e:\LaTeX Template Documents\Formula Sheet Template - Guide\build_Formula Sheet Template Guide\Formula Sheet Template Guide.aux)
+[2 <./images/LaTeX Logo.png>] (e:\LaTeX Template Documents\Guides\Formula Sheet Template - Guide\build_Formula Sheet Template Guide\Formula Sheet Template Guide.aux)
 Package logreq Info: Writing requests to '"Formula Sheet Template Guide".run.xml'.
 \openout1 = `"Formula Sheet Template Guide.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 56547 strings out of 475285
- 1288199 string characters out of 2774591
- 2137712 words of memory out of 12000000
- 77045 multiletter control sequences out of 15000+600000
+ 56552 strings out of 475285
+ 1288355 string characters out of 2774591
+ 2137826 words of memory out of 12000000
+ 77050 multiletter control sequences out of 15000+600000
  569474 words of font info for 115 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 91i,20n,85p,1234b,1842s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 91i,20n,85p,1241b,1844s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc}{C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc} <C:\Users\Alex\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi720\esint10.pk><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbsy10.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi6.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmib10.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmib7.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "e:\LaTeX Template Documents\Formula Sheet Template - Guide\build_Formula Sheet Template Guide\Formula Sheet Template Guide.pdf" (10 pages, 387540 bytes).
+Output written on "e:\LaTeX Template Documents\Guides\Formula Sheet Template - Guide\build_Formula Sheet Template Guide\Formula Sheet Template Guide.pdf" (10 pages, 388620 bytes).
 PDF statistics:
  301 PDF objects out of 1000 (max. 8388607)
  34 named destinations out of 1000 (max. 500000)
