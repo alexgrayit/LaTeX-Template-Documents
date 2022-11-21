@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.18)  21 NOV 2022 14:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.21)  22 NOV 2022 01:15
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1337,17 +1337,20 @@ Package biblatex Info: ... and expl3
 Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
 ))
 \tablegap=\skip136
-Package hyperref Info: Option `colorlinks' set `true' on input line 249.
+\myboxA=\box155
+\myboxB=\box156
+\mylenA=\skip137
+Package hyperref Info: Option `colorlinks' set `true' on input line 272.
  (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/bold-extra\bold-extra.sty
 Package: bold-extra 2001/11/13 v0.1 Use fonts from cm/mf-extra/bold
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 489.
+Package hyperref Info: Option `colorlinks' set `true' on input line 513.
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
 Package csquotes Info: Adjusting default style.
 Package csquotes Info: Redefining alias 'default' -> 'english'.
-\tikzscale@accuracy=\skip137
+\tikzscale@accuracy=\skip138
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 6.
  (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1376,7 +1379,7 @@ LaTeX Font Info:    ... okay on input line 6.
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count517
 \scratchdimen=\dimen377
-\scratchbox=\box155
+\scratchbox=\box157
 \nofMPsegments=\count518
 \nofMParguments=\count519
 \everyMPshowfont=\toks52
@@ -1532,13 +1535,13 @@ Package logreq Info: Writing requests to '"Report Template".run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 55945 strings out of 475285
- 1279113 string characters out of 2774591
- 2130132 words of memory out of 12000000
- 76486 multiletter control sequences out of 15000+600000
+ 55950 strings out of 475285
+ 1279150 string characters out of 2774591
+ 2130246 words of memory out of 12000000
+ 76491 multiletter control sequences out of 15000+600000
  540518 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 91i,14n,85p,1206b,1899s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 91i,14n,85p,1206b,1901s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc} <C:\Users\Alex\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi720\esint10.pk><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmib7.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
 Output written on "e:\LaTeX Template Documents\Report Template\build_Report Template\Report Template.pdf" (4 pages, 170309 bytes).
 PDF statistics:
