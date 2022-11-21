@@ -1,14 +1,14 @@
 # Fdb version 3
-["biber build_Formula Sheet Template Guide/Formula Sheet Template Guide"] 1669001219 "build_Formula Sheet Template Guide/Formula Sheet Template Guide.bcf" "build_Formula Sheet Template Guide/Formula Sheet Template Guide.bbl" "build_Formula Sheet Template Guide/Formula Sheet Template Guide" 1669005951
-  "build_Formula Sheet Template Guide/Formula Sheet Template Guide.bcf" 1669005950 107055 8a2768b69b47b6c85c5226ad75a9f818 "pdflatex"
+["biber build_Formula Sheet Template Guide/Formula Sheet Template Guide"] 1669001219 "build_Formula Sheet Template Guide/Formula Sheet Template Guide.bcf" "build_Formula Sheet Template Guide/Formula Sheet Template Guide.bbl" "build_Formula Sheet Template Guide/Formula Sheet Template Guide" 1669033817
+  "build_Formula Sheet Template Guide/Formula Sheet Template Guide.bcf" 1669033816 107055 8a2768b69b47b6c85c5226ad75a9f818 "pdflatex"
   "references.bib" 1668999947 1614 115d1307ef6deb248ccbd8458dc32da6 ""
   (generated)
   "build_Formula Sheet Template Guide/Formula Sheet Template Guide.bbl"
   "build_Formula Sheet Template Guide/Formula Sheet Template Guide.blg"
-["pdflatex"] 1669005948 "e:/LaTeX Template Documents/Formula Sheet Template - Guide/Formula Sheet Template Guide.tex" "build_Formula Sheet Template Guide/Formula Sheet Template Guide.pdf" "Formula Sheet Template Guide" 1669005951
+["pdflatex"] 1669033814 "e:/LaTeX Template Documents/Formula Sheet Template - Guide/Formula Sheet Template Guide.tex" "build_Formula Sheet Template Guide/Formula Sheet Template Guide.pdf" "Formula Sheet Template Guide" 1669033817
   "C:/Users/Alex/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1668952632 294603 6523223a444f088db5b44b8fd7d12288 ""
   "C:/Users/Alex/AppData/Local/MiKTeX/fonts/pk/ljfour/public/esint/dpi720/esint10.pk" 1600359289 13864 6591450630c1127f902dc3b0d61939e1 ""
-  "C:/Users/Alex/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1668744295 10804102 a01336f0974fa1d1cc318fc13d0b35d4 ""
+  "C:/Users/Alex/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1669008116 10804102 1000733538fb44eecef53097d8b1ad6d ""
   "C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
   "C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathex.enc" 1256929440 3486 c7eadf5dcc57b3b2d11736679f6636ba ""
   "C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc" 1256929440 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
@@ -382,12 +382,12 @@
   "C:/Users/Alex/AppData/Local/Programs/MiKTeX/tex/latex/xpatch/xpatch.sty" 1585221260 8510 7803f78066c4f9d008405191a4b43073 ""
   "C:/Users/Alex/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1626888562 123 a302f2c651a95033260db60e51527ae8 ""
   "Formula Sheet Preamble.tex" 1669005574 17469 f3e3bfe9775dbf4c3b71ee86bebab057 ""
-  "Formula Sheet Template Guide.tex" 1669005944 15003 bbd396d85fbc0e54234ae7601dc7a833 ""
-  "build_Formula Sheet Template Guide/Formula Sheet Template Guide.aux" 1669005950 10012 63a4b04524c6a022ceefe22683b6ab37 "pdflatex"
+  "Formula Sheet Template Guide.tex" 1669033813 15032 72b5c7d787243be5a9923916fc0ff8d3 ""
+  "build_Formula Sheet Template Guide/Formula Sheet Template Guide.aux" 1669033816 10012 63a4b04524c6a022ceefe22683b6ab37 "pdflatex"
   "build_Formula Sheet Template Guide/Formula Sheet Template Guide.bbl" 1669001221 1553 5b42bb15905fa7a5a4ff0c0d1900eaaa "biber build_Formula Sheet Template Guide/Formula Sheet Template Guide"
-  "build_Formula Sheet Template Guide/Formula Sheet Template Guide.run.xml" 1669005950 2612 cdc77a219fa4326f095a9f7a3a5051be "pdflatex"
-  "build_Formula Sheet Template Guide/Formula Sheet Template Guide.toc" 1669005950 1354 86215d07fb7b7e061d2536a7b539eac5 "pdflatex"
-  "e:/LaTeX Template Documents/Formula Sheet Template - Guide/Formula Sheet Template Guide.tex" 1669005944 15003 bbd396d85fbc0e54234ae7601dc7a833 ""
+  "build_Formula Sheet Template Guide/Formula Sheet Template Guide.run.xml" 1669033816 2612 cdc77a219fa4326f095a9f7a3a5051be "pdflatex"
+  "build_Formula Sheet Template Guide/Formula Sheet Template Guide.toc" 1669033816 1354 86215d07fb7b7e061d2536a7b539eac5 "pdflatex"
+  "e:/LaTeX Template Documents/Formula Sheet Template - Guide/Formula Sheet Template Guide.tex" 1669033813 15032 72b5c7d787243be5a9923916fc0ff8d3 ""
   "images/LaTeX Logo.png" 1668950802 44146 d0a4a18f90d683408a0c97593321865f ""
   (generated)
   "build_Formula Sheet Template Guide/Formula Sheet Template Guide.aux"

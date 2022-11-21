@@ -62,7 +62,7 @@
             This edits your student ID that appears in the headers.
 
             \verb+\author{Author 1 \\[0.5em] Author 2 \\[0.5em] Author 3 \\}+\\
-            This edits the author field on the titlepage. To add a new author add a \verb+\\+ between names. To increase the spacing change it to a \verb+\\[<extra spacing>]+ e.g. \verb+\\[2mm]+.
+            This edits the author field on the titlepage. To add a new author you can add a \verb+\\+ between names (or just a comma). To increase the spacing change it to a \verb+\\[<extra spacing>]+ e.g. \verb+\\[2mm]+.
 
             \verb+\date{}+\\
             This adds the date to the titlepage. If the field is empty it doesn't add it to the page. Making the field \verb+\today+ automatically changes the field to the date of compilation.
@@ -71,7 +71,7 @@
 
             %More complex commands
             \verb+\title{\Assignment}+\\
-            Changes the title field. By default uses the \verb+\Assignment+ macro but can be edited to add extra text. (\LaTeX~tries to outsmart you if you add text after a command by removing the space between the command text and the new text, use a ``\verb+~+'' e.g. \verb+\Assignment~extra text+ to force it to add text.)
+            Changes the title field. By default uses the \verb+\Assignment+ macro but can be edited to add extra text. (\LaTeX~tries to outsmart you if you add text after a command by removing the space between the command text and the new text, use a ``\verb+~+'' e.g. \verb+\Assignment~extra text+ to force it to add a space.)
 
             \verb+\numberwithin{equation}{section}+\\
             Changes the numbering of equations. As above it numbers them as (\verb+<sec num>.<eq num>+) where the equation number counter gets reset at the start of each section. To just number them by equation (ignoring sections) make the second field empty.
