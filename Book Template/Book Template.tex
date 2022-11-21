@@ -1,0 +1,27 @@
+\documentclass[a4paper, english, 12pt]{book}
+\include{Book Preamble.tex}
+
+
+\begin{document}
+    \fullPageTitle
+    
+    \frontmatter
+    
+
+    \ToC
+
+    \mainmatter
+    \setChapterFormatArabic
+
+    \subfile{chapters/Chapter Template.tex}
+
+
+
+    
+    \setChapterFormatRoman
+    
+    \setcounter{chapter}{0} % makes the module numbering start at x+1, where x is the number here
+
+    \subfile{chapters/Chapter Template.tex}
+
+\end{document}
