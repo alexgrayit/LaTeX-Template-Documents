@@ -1879,6 +1879,9 @@ INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\lm\ts1lmr.fd
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ts1-lmr12.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr10.tfm
+INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
+INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmro12.tfm
+INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr10.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr10.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr7.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\rm-lmr5.tfm
@@ -1917,7 +1920,6 @@ INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmmib7.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmbsy10.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmbsy10.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\lmbsy7.tfm
-INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
 INPUT .\images\LaTeX Logo.png
 INPUT images\LaTeX Logo.png
 INPUT .\images\LaTeX Logo.png
@@ -1932,10 +1934,10 @@ INPUT e:\LaTeX Template Documents\Report Template - Guide\build_report template 
 INPUT e:\LaTeX Template Documents\Report Template - Guide\build_report template guide\report template guide.run.xml
 OUTPUT e:\LaTeX Template Documents\Report Template - Guide\build_report template guide\report template guide.run.xml
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
-INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathsy.enc
+INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
 INPUT C:\Users\Alex\AppData\Local\MiKTeX\fonts\pk\ljfour\public\esint\dpi720\esint10.pk
 INPUT C:\Users\Alex\AppData\Local\MiKTeX\fonts\pk\ljfour\public\esint\dpi720\esint10.pk
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ts1.enc
@@ -1967,6 +1969,8 @@ INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr8.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr8.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri12.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmri12.pfb
+INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmro12.pfb
+INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmro12.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy10.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmsy10.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmtt12.pfb

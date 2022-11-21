@@ -268,7 +268,7 @@
 
 
 \newcommand{\references}{
-    \fancyhead[L]{REFERENCES}
+    \fancyhead[L]{\headercase{References}}
     \addcontentsline{toc}{section}{References}
     \setlength\bibitemsep{1.5\itemsep}
     \defbibheading{SpecialBibHeadingStyle}{\section*{References}}
@@ -281,7 +281,7 @@
 \newcommand{\appendices}{
     \appendix
     \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
-    \fancyhead[L]{APPENDICES}
+    \fancyhead[L]{\headercase{Appendices}}
 
     \section*{Appendices}
     \addtocounter{section}{1}
@@ -411,7 +411,7 @@
 \setlength{\headheight}{15.2pt}
 
 % overridden by customisation below
-\fancyhead[L]{\headercase\nouppercase{\leftmark}} % Left header - last section on page
+\fancyhead[L]{\headercase{\leftmark}} % Left header - last section on page
 \fancyhead[R]{\SID} % Right Header
 \fancyfoot[C]{\small\thepage} % Puts page number bottom centre
 
@@ -483,8 +483,8 @@
     citecolor=black
 }
 
-\newcommand{\headercase}{\scshape}
-\fancyhead[L]{\headercase\nouppercase{\leftmark}} % Left header - last section on page
+\newcommand{\headercase}[1]{\scshape\nouppercase{#1}}
+\fancyhead[L]{\headercase{\leftmark}} % Left header - last section on page
 \fancyhead[R]{\SID} % Right Header
 \fancyfoot[C]{\small\thepage} % Puts page number bottom centre
 

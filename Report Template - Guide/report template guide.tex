@@ -82,13 +82,17 @@
             \verb+\setlength{\parskip}{1em}+\\
             This sets the length of a space between paragraphs. LaTeX treats a new paragraph as starting whenever within your \verb+.tex+ file there is an empty line followed by new text. By default \LaTeX doesn't add any space between paragraphs, changing the second field changes the spacing between paragraphs.
 
-            \verb+\fancyhead[L]{\leftmark}+\\
+            \verb+\newcommand{\headercase}[1]{\scshape\nouppercase{#1}}+\\
+            Macro for controlling the header style, takes the header text as its argument. \verb+\scshape+ sets it to small caps, you can change this or add multiple styles. Other options include \verb+\itshape+ ({\itshape italic}), \verb+\bfseries+ ({\bfseries bold}) and \verb+\slshape+ ({\slshape slanted}).\\
+            Remove the \verb+\nouppercase+ command to force it to all uppercase.
+
+            \verb+\fancyhead[L]{\headercase{\leftmark}}+\\
             This changes the left side of the header. \verb+\leftmark+ contains the last section that is started on a given page, \verb+\rightmark+ contains the last heading (i.e. including subsections etc.) that is started on a given page.
 
             \verb+\fancyhead[R]{\SID}+\\
             Changes the right side of the header. By default uses the custom macro \verb+\SID+ but can be changed.
 
-            \verb+\fancyfoot[C]{\thepage}+\\
+            \verb+\fancyfoot[C]{\small\thepage}+\\
             Changes the centre of the footer, by default adds the page number with \verb+\thepage+.
 
     \newpage
