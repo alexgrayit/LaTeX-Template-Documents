@@ -8,7 +8,7 @@ Within this repository are various example documents for common document types y
 
 [Formula Sheet Template Guide](./Formula%20Sheet%20Template%20-%20Guide/build_Formula%20Sheet%20Template%20Guide/Formula%20Sheet%20Template%20Guide.pdf)
 
-Book Template Guide
+[Book Template Guide](./Book%20Template%20-%20Guide/build_Book%20Template%20Guide/Book%20Template%20Guide.pdf)
 
 ## General Guide to LaTeX
 
