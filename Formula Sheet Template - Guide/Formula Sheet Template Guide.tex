@@ -24,7 +24,7 @@
     \section{What This Is}
         \label{sec: what this is}
         
-        Here I've used the \verb+Report Template.tex+ document to create a guide to said document. Below is a guide to how to edit the \LaTeX~if you are new, as well as the different commands that have been added on top of the default \LaTeX~commands.
+        Here I've used the \verb+Formula Sheet Template.tex+ document to create a guide to said document. Below is a guide to how to edit the \LaTeX~if you are new, as well as the different commands that have been added on top of the default \LaTeX~commands.
     
 
     \section{The Custom Commands / Macros}
@@ -121,6 +121,12 @@
 
             Internal cross referencing allows you to refer the reader to another part of the document using the corresponding \verb+\label+. The default \LaTeX commands are not terrible but by default it only generates a hyperlinked form of the number of whatever you're referring to. Instead we can use the commands below.
 
+            \verb+\eqnum{<label>}+\\
+            Just grabs the number of an equation. If you want to repeat an equation but keep the original number you can use \verb+\tag{\eqnum{<label>}}+ where \verb+<label>+ is the label of the original equation.
+
+            \verb+\eqref{<label>}+ or \verb+\Eqref{<label>}+\\
+            This generates a cross reference to an equation, \verb+\Eqref+ capitalises the word ``Equation''. E.g. there is \eqref{eq: Gauss Law} or \Eqref{eq: Gauss Law}.
+
             \verb+\secref{<label>}+\\
             This references a section by number and name e.g. \secref{sec: editing the preamble}.\\
             This can also be changed to just reference by just number or name by changing the line in the preamble from \verb+\newcommand{\secref}[1]{\secrefNumName{#1}}+ to:\\
@@ -130,17 +136,12 @@
             \verb+\figref{<label>}+ or \verb+\Figref{<label>}+\\
             This generates a cross reference to a figure, \verb+\Figref+ capitalises the word ``Figure''. E.g. there is \figref{fig: latex logo} or \Figref{fig: latex logo}.
 
-            \verb+\eqref{<label>}+ or \verb+\Eqref{<label>}+\\
-            This generates a cross reference to an equation, \verb+\Eqref+ capitalises the word ``Equation''. E.g. there is \eqref{eq: Gauss Law} or \Eqref{eq: Gauss Law}.
-
             \verb+\tableref{<label>}+ or \verb+\Tableref{<label>}+\\
             This generates a cross reference to a table, \verb+\Table+ capitalises the word ``Table''. E.g. there is \tableref{table: example} or \Tableref{table: example}.
 
             \verb+\appref{<label>}+ or \verb+\Appref{<label>}+\\
             This generates a cross reference to an appendix, \verb+\Appref+ capitalises the word ``Appendix''. E.g. there is \appref{app: example figure} or \Appref{app: example figure}.
 
-            \verb+\eqnum{<label>}+\\
-            Just grabs the number of an equation. If you want to repeat an equation but keep the original number you can use \verb+\tag{\eqnum{<label>}}+ where \verb+<label>+ is the label of the original equation.
 
         \newpage
 
@@ -201,16 +202,19 @@
             \verb+\newcommand{\Uni}{The University of Sydney}+\\
             This command edits part of the header of the titlepage. Edit the second field to change the header, making it empty removes that part of the header.
 
-            \verb+\newcommand{\School}{School of Aerospace Mechanical and Mechatronics Engineering}+\\
+            \verb+\newcommand{\School}{School of Physics}+\\
             This command edits part of the header of the titlepage. Edit the second field to change the header, making it empty removes that part of the header.
 
             \verb+\newcommand{\Unit}{Unit Code}+\\
             This command edits part of the body of the titlepage. Edit the second field to change the text, making it empty removes that part of the titlepage.
 
-            \verb+\newcommand{\Class}{Class Time}+\\
+            \verb+\newcommand{\Year}{Year}+\\
+            This command edits part of the body of the titlepage and the header. Edit the second field to change the text, making it empty removes it from the titlepage and the header.
+
+            \verb+\newcommand{\Class}{}+\\
             This command edits part of the body of the titlepage. Edit the second field to change the text, making it empty removes that part of the titlepage.
 
-            \verb+\newcommand{\Assignment}{Assignment Name}+\\
+            \verb+\newcommand{\Assignment}{}+\\
             This changes the title of the titlepage. Edit the second field to change the text.
 
             \verb+\newcommand{\SID}{123456789}+\\
