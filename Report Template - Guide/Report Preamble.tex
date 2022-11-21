@@ -404,15 +404,16 @@
 % Sets the folder path for images to be a subfolder of where the .tex file is
 \graphicspath{{./images/}}
 
+
 % Headers and footers
 \pagestyle{fancy}
 \fancyhf{}
 \setlength{\headheight}{15.2pt}
 
 % overridden by customisation below
-\fancyhead[L]{\leftmark} % Left header - last section on page
+\fancyhead[L]{\headercase\nouppercase{\leftmark}} % Left header - last section on page
 \fancyhead[R]{\SID} % Right Header
-\fancyfoot[C]{\thepage} % Puts page number bottom centre
+\fancyfoot[C]{\small\thepage} % Puts page number bottom centre
 
 
 \fancypagestyle{noheader}{
@@ -482,10 +483,10 @@
     citecolor=black
 }
 
-
-\fancyhead[L]{\leftmark} % Left header - last section on page
+\newcommand{\headercase}{\scshape}
+\fancyhead[L]{\headercase\nouppercase{\leftmark}} % Left header - last section on page
 \fancyhead[R]{\SID} % Right Header
-\fancyfoot[C]{\thepage} % Puts page number bottom centre
+\fancyfoot[C]{\small\thepage} % Puts page number bottom centre
 
 
 

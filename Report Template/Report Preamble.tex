@@ -283,7 +283,7 @@
 \newcommand{\appendices}{
     \appendix
     \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
-    \fancyhead[L]{APPENDICES}
+    \fancyhead[L]{\scshape Appendices}
 
     \section*{Appendices}
     \addtocounter{section}{1}
@@ -412,9 +412,9 @@
 \setlength{\headheight}{15.2pt}
 
 % overridden by customisation below
-\fancyhead[L]{\leftmark} % Left header - last section on page
+\fancyhead[L]{\headercase\nouppercase{\leftmark}} % Left header - last section on page
 \fancyhead[R]{\SID} % Right Header
-\fancyfoot[C]{\thepage} % Puts page number bottom centre
+\fancyfoot[C]{\small\thepage} % Puts page number bottom centre
 
 
 \fancypagestyle{noheader}{
@@ -485,9 +485,10 @@
 }
 
 
-\fancyhead[L]{\leftmark} % Left header - last section on page
+\newcommand{\headercase}{\scshape}
+\fancyhead[L]{\headercase\nouppercase{\leftmark}} % Left header - last section on page
 \fancyhead[R]{\SID} % Right Header
-\fancyfoot[C]{\thepage} % Puts page number bottom centre
+\fancyfoot[C]{\small\thepage} % Puts page number bottom centre
 
 
 
