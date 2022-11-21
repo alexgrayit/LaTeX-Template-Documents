@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.21)  22 NOV 2022 01:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.21)  22 NOV 2022 01:42
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -23,11 +23,7 @@ File: bk12.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
 \abovecaptionskip=\skip47
 \belowcaptionskip=\skip48
 \bibindent=\dimen140
-)
-
-LaTeX Warning: \include should only be used after \begin{document} on input line 2.
-
-(Book Preamble.tex (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
+) (Book Preamble.tex (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath.sty
 Package: amsmath 2022/04/08 v2.17n AMS math features
 \@mathmargin=\skip49
 
@@ -1555,13 +1551,13 @@ Package logreq Info: Writing requests to '"Book Template".run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 56047 strings out of 475285
- 1280845 string characters out of 2774591
- 2129834 words of memory out of 12000000
- 76562 multiletter control sequences out of 15000+600000
+ 56046 strings out of 475285
+ 1280820 string characters out of 2774591
+ 2129838 words of memory out of 12000000
+ 76561 multiletter control sequences out of 15000+600000
  522213 words of font info for 73 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 91i,12n,85p,1202b,1897s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 89i,12n,83p,1202b,1897s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb>
 Output written on "e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.pdf" (8 pages, 139876 bytes).
 PDF statistics:
