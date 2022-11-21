@@ -1821,14 +1821,12 @@ INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\Book Templat
 INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.bbl
 INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.bbl
 INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.bbl
-INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmcsc10.tfm
-INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmcsc10.tfm
-INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmcsc10.tfm
-INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmcsc10.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr17.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
-INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
+INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr17.tfm
 INPUT C:\Users\Alex\AppData\Local\MiKTeX\fonts\map\pdftex\pdftex.map
+INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr17.tfm
+INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.toc
 INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.toc
 INPUT e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.toc
@@ -1906,10 +1904,11 @@ INPUT .\chapters\Chapter Template.tex
 INPUT chapters\Chapter Template.tex
 INPUT .\chapters\Chapter Template.tex
 INPUT chapters\Chapter Template.tex
-INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr17.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
+INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbx12.tfm
 INPUT .\chapter types\Chapter Type 2.tex
+INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmcsc10.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr10.tfm
 OUTPUT e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types\Chapter Type 2.aux
 INPUT .\chapter types\Chapter Type 2.tex
@@ -1969,3 +1968,5 @@ INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr10.pf
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr10.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr12.pfb
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr12.pfb
+INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr17.pfb
+INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\type1\public\lm\lmr17.pfb

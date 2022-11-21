@@ -238,12 +238,14 @@
 
 
 % Lower case commands
+\newcommand{\chapref}[1]{\mbox{\hyperref[#1]{chapter\hspace{2pt}}\ref{#1}\hyperref[#1]{:\hspace{1pt}}\nameref{#1}}}
 \newcommand{\appref}[1]{\mbox{\hyperref[#1]{appendix\hspace{2pt}}\ref{#1}}}
 \renewcommand{\eqref}[1]{\mbox{\hyperref[#1]{equation\hspace{2pt}}\ref{#1}}}
 \newcommand{\figref}[1]{\mbox{\hyperref[#1]{figure\hspace{2pt}}\ref{#1}}}
 \newcommand{\tableref}[1]{\mbox{\hyperref[#1]{table\hspace{2pt}}\ref{#1}}}
 
 % Capitalised Commands
+\newcommand{\Chapref}[1]{\mbox{\hyperref[#1]{Chapter\hspace{2pt}}\ref{#1}\hyperref[#1]{:\hspace{1pt}}\nameref{#1}}}
 \newcommand{\Appref}[1]{\mbox{\hyperref[#1]{Appendix\hspace{2pt}}\ref{#1}}}
 \newcommand{\Eqref}[1]{\mbox{\hyperref[#1]{Equation\hspace{2pt}}\ref{#1}}}
 \newcommand{\Figref}[1]{\mbox{\hyperref[#1]{Figure\hspace{2pt}}\ref{#1}}}
@@ -343,7 +345,7 @@
 \newcommand{\references}{
     \setcounter{secnumdepth}{-1} % levels under sublevel x are not numbered
     
-    \fancyhead[L]{\headercase{References}}
+    \fancyhead[LE, LO]{\headercase{References}}
     \setlength\bibitemsep{1.5\itemsep}
 
     \setChapterFormatReferences
@@ -359,7 +361,7 @@
 % Use at start of appendix section
 \newcommand{\appendices}{
     \appendix
-    \fancyhead[L]{\headercase{Appendices}}
+    \fancyhead[LE, LO]{\headercase{Appendices}}
 
     \setChapterFormatAppendix
     \subfile{chapters/Appendices.tex}
@@ -394,59 +396,25 @@
 
 \newcommand{\fullPageTitle}{
     \begin{titlepage}
-
-        \vspace{\stretch{1}}
-
+        \center
         \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
-        
-        \center % Center everything on the page
-         
 
-        % HEADINGS -----------------------------------------------------------------------------------
-        \vspace*{\fill}
-        \if \Uni \empty
-        \else
-            {\scshape\huge ~\Uni}\\[1em] % Name of your university/college
-        \fi
-        
-        \if \School \empty
-        \else
-            {\scshape\Large ~\School}\\[4em] % Major heading such as course name
-        \fi
-        
-        \if \Unit \empty
-        \else
-            {\scshape\Large ~\Unit}\\[1em]
-        \fi
+        \vspace*{\stretch{2}}
 
-        \if \Class \empty
-        \else
-            {\scshape\large ~\Class}\\[3em]% Minor heading such as course title
-        \fi
-
-
-        % TITLE -----------------------------------------------------------------------------------
         \HRule \\[0.4cm]
-        { \Huge \bfseries \@title}\\[0.1cm] % Title of your document
-        \HRule \\[4em]
-         
+        { \HUGE \bfseries \@title}\\[0.1cm] % Title of your document
+        \HRule\\[4em]
 
-        % AUTHOR ----------------------------------------------------------------------------------
-        \if \@author \empty
-        \else
-            {\large \@author}
-        \fi
-        
+        {\Large \@author}
 
         \vspace{\stretch{4}} % Fill the rest of the page with whitespace
 
-        % DATE ----------------------------------------------------------------------------------------
+        
         \if \@date \empty
         \else
             {\large ~\@date}\\ % Date, change the \today to a set date if you want to be precise
             \vspace{4em}
         \fi
-        
     \end{titlepage}
 }
 \makeatother
@@ -478,7 +446,7 @@
 \graphicspath{{./images/}}
 
 % Headers and footers
-\renewcommand{\chaptermark}[1]{\markboth{\Large #1}{}}
+\renewcommand{\chaptermark}[1]{\markboth{\large #1}{}}
 \renewcommand{\sectionmark}[1]{\markright{#1}}
 
 \pagestyle{fancy}
@@ -505,7 +473,7 @@
 % Equation Explanation
 \newcommand{\eqexp}[1]{
     \begin{adjustwidth}{0.5cm}{1cm}
-        \textit{#1}
+        \textsl{#1}
     \end{adjustwidth}
     \vspace{0.5em}
 }
@@ -523,14 +491,9 @@
 % -------------------------------------------------------------
 
 % Making any of these fields blank will remove them from the titlepage
-\newcommand{\Uni}{The University of Sydney}
-\newcommand{\School}{School of Aerospace Mechanical and Mechatronics Engineering}
-\newcommand{\Unit}{Unit Code}
-\newcommand{\Class}{Class Time}
-\newcommand{\Assignment}{Assignment Name}
-\newcommand{\SID}{123456789}
+\newcommand{\BookName}{Book Name}
 
-\author{Author 1 \\[0.5em] Author 2 \\[0.5em] Author 3 \\}
+\author{Author 1, Author 2, Author 3}
 
 \date{} % makes it undated, remove this line if you want a date to appear
 %\date{\today} % make the date the current date
@@ -543,7 +506,7 @@
 %   --- Semi-Advanced LaTeX users feel free to edit what is below ---  |
 % ----------------------------------------------------------------------
 
-\title{\Assignment}
+\title{\BookName}
 
 % Formatting
 \numberwithin{equation}{chapter} % numbers equation with secNum.EqNum, remove to number globally
@@ -562,7 +525,7 @@
 }
 
 
-\newcommand{\headercase}[1]{\Large\scshape\nouppercase #1}
+\newcommand{\headercase}[1]{\large\scshape\nouppercase #1}
 \fancyhead[LO, LE]{\headercase{\leftmark}}
 \fancyfoot[RE, RO]{\small\thepage}
 \fancyhead[RO, RE]{\hyperlink{ToC}{Table of Contents}}
