@@ -1,0 +1,27 @@
+\documentclass[Book Template.tex]{subfiles}
+\begin{document}
+
+    % Remove number/letter in front of Appendix
+    \setcounter{secnumdepth}{-1} % levels under sublevel x are not numbered
+
+    \chapter{Appendices}
+        \label{ch: Appendices}
+        \thispagestyle{noheader}
+
+        % Cont. Remove the letter A from Table of Contents, keep the A in section numbers --------------
+        \setcounter{secnumdepth}{3} % levels under sublevel x are not numbered                         |
+        \setcounter{chapter}{1} % makes the module numbering start at x+1, where x is the number here  |
+        % ----------------------------------------------------------------------------------------------
+
+        \section{Appendix 1}
+
+            \subsection{A Subsection}
+
+        \newpage
+
+        \section{Appendix 2}
+
+            \subsection{Another Subsection}
+    
+\end{document}
+

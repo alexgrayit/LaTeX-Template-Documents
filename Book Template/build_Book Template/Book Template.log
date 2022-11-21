@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.21)  21 NOV 2022 20:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.21)  21 NOV 2022 21:34
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1351,7 +1351,7 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 272.
  (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/bold-extra\bold-extra.sty
 Package: bold-extra 2001/11/13 v0.1 Use fonts from cm/mf-extra/bold
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 554.
+Package hyperref Info: Option `colorlinks' set `true' on input line 562.
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1361,11 +1361,11 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 5.
  (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.aux (e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types/chapter type 1.aux) (e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types/chapter type 2.aux)
+) (e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.aux (e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types/Chapter Type 1.aux) (e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types/Chapter Type 2.aux)
 
 LaTeX Warning: Label `ch: Example Chapter' multiply defined.
 
-)
+(e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types/Chapter Type References.aux) (e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types/Chapter Type Appendices.aux))
 \openout1 = `"Book Template.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
@@ -1525,9 +1525,9 @@ File: uesint.fd
  [1
 
 ]
-\openout2 = `"chapter types/chapter type 1.aux"'.
+\openout2 = `"chapter types/Chapter Type 1.aux"'.
 
- (chapter types/chapter type 1.tex) (chapters/Chapter Template.tex
+ (chapter types/Chapter Type 1.tex) (chapters/Chapter Template.tex
 Chapter 1.
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
@@ -1543,17 +1543,42 @@ l.14         \newpage
 ])
 
 Package fancyhdr Warning: \headheight is too small (15.2pt): 
-(fancyhdr)                Make it at least 16.25378pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.25378pt}.
+(fancyhdr)                Make it at least 22.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.0pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.05379pt}.
+(fancyhdr)                \addtolength{\topmargin}{-6.8pt}.
 
 [2]
-\openout2 = `"chapter types/chapter type 2.aux"'.
+\openout2 = `"chapter types/Chapter Type 2.aux"'.
 
- (chapter types/chapter type 2.tex) (chapters/Chapter Template.tex
+ (chapter types/Chapter Type 2.tex) (chapters/Chapter Template.tex
 Chapter I.
 [3
+
+
+
+
+])
+
+Package fancyhdr Warning: \headheight is too small (15.2pt): 
+(fancyhdr)                Make it at least 22.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.0pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-6.8pt}.
+
+[4]
+\openout2 = `"chapter types/Chapter Type References.aux"'.
+
+ (chapter types/Chapter Type References.tex)
+
+LaTeX Warning: Empty bibliography on input line 28.
+
+\openout2 = `"chapter types/Chapter Type Appendices.aux"'.
+
+(chapter types/Chapter Type Appendices.tex) (chapters/Appendices.tex [5
+
+
+
 
 
 
@@ -1562,12 +1587,12 @@ Chapter I.
 AED: lastpage setting LastPage
 
 Package fancyhdr Warning: \headheight is too small (15.2pt): 
-(fancyhdr)                Make it at least 16.25378pt, for example:
-(fancyhdr)                \setlength{\headheight}{16.25378pt}.
+(fancyhdr)                Make it at least 22.0pt, for example:
+(fancyhdr)                \setlength{\headheight}{22.0pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-1.05379pt}.
+(fancyhdr)                \addtolength{\topmargin}{-6.8pt}.
 
-[4] (e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.aux (e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types/chapter type 1.aux) (e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types/chapter type 2.aux))
+[6] (e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.aux (e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types/Chapter Type 1.aux) (e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types/Chapter Type 2.aux) (e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types/Chapter Type References.aux) (e:\LaTeX Template Documents\Book Template\build_Book Template\chapter types/Chapter Type Appendices.aux))
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -1576,17 +1601,17 @@ Package logreq Info: Writing requests to '"Book Template".run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 56070 strings out of 475285
- 1282855 string characters out of 2774591
- 2133263 words of memory out of 12000000
- 76592 multiletter control sequences out of 15000+600000
+ 56148 strings out of 475285
+ 1286881 string characters out of 2774591
+ 2140597 words of memory out of 12000000
+ 76646 multiletter control sequences out of 15000+600000
  524585 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,12n,85p,1202b,1897s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb>
-Output written on "e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.pdf" (6 pages, 108984 bytes).
+Output written on "e:\LaTeX Template Documents\Book Template\build_Book Template\Book Template.pdf" (8 pages, 117459 bytes).
 PDF statistics:
- 112 PDF objects out of 1000 (max. 8388607)
- 18 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 150 PDF objects out of 1000 (max. 8388607)
+ 25 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 

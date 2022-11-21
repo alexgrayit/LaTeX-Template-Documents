@@ -307,12 +307,20 @@
 
 
 \newcommand{\setChapterFormatRoman}{
-    \include{chapter types/chapter type 2.tex}
+    \include{chapter types/Chapter Type 2.tex}
 }
 
 
 \newcommand{\setChapterFormatArabic}{
-    \include{chapter types/chapter type 1.tex}
+    \include{chapter types/Chapter Type 1.tex}
+}
+
+\newcommand{\setChapterFormatAppendix}{
+    \include{chapter types/Chapter Type Appendices.tex}
+}
+
+\newcommand{\setChapterFormatReferences}{
+    \include{chapter types/Chapter Type References.tex}
 }
 
 
@@ -333,11 +341,17 @@
 
 
 \newcommand{\references}{
+    \setcounter{secnumdepth}{-1} % levels under sublevel x are not numbered
+    
     \fancyhead[L]{\headercase{References}}
-    \addcontentsline{toc}{section}{References}
     \setlength\bibitemsep{1.5\itemsep}
-    \defbibheading{SpecialBibHeadingStyle}{\section*{References}}
+
+    \setChapterFormatReferences
+
+    \defbibheading{SpecialBibHeadingStyle}{\chapter{References}}
     \printbibliography[heading=SpecialBibHeadingStyle]
+
+    \setcounter{secnumdepth}{3} % levels under sublevel x are not numbered
 }
 
 
@@ -345,16 +359,10 @@
 % Use at start of appendix section
 \newcommand{\appendices}{
     \appendix
-    \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
     \fancyhead[L]{\headercase{Appendices}}
 
-    \section*{Appendices}
-    \addtocounter{section}{1}
-    \addcontentsline{toc}{section}{Appendices}
-
-    \titleformat{\subsection}{\normalfont\Large\bfseries}{\thesubsection}{1em}{}
-    \titleformat{\subsubsection}{\normalfont\large\bfseries}{\thesubsubsection}{1em}{}
-    \titleformat{\paragraph}{\normalfont\normalsize\bfseries}{\paragraph}{1em}{}
+    \setChapterFormatAppendix
+    \subfile{chapters/Appendices.tex}
 }
 
 
@@ -554,7 +562,7 @@
 }
 
 
-\newcommand{\headercase}[1]{\scshape\nouppercase{#1}}
+\newcommand{\headercase}[1]{\Large\scshape\nouppercase #1}
 \fancyhead[LO, LE]{\headercase{\leftmark}}
 \fancyfoot[RE, RO]{\small\thepage}
 \fancyhead[RO, RE]{\hyperlink{ToC}{Table of Contents}}

@@ -1,9 +1,9 @@
 [0] Config.pm:306> INFO - This is Biber 2.18
 [0] Config.pm:309> INFO - Logfile is 'build_Book Template/Book Template.blg'
-[81] biber-MSWIN64:340> INFO - === 
-[108] Biber.pm:418> INFO - Reading 'build_Book Template/Book Template.bcf'
-[192] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
-[204] bbl.pm:654> INFO - Writing 'build_Book Template/Book Template.bbl' with encoding 'UTF-8'
-[204] bbl.pm:757> INFO - Output to build_Book Template/Book Template.bbl
-[204] Biber.pm:130> WARN - The file 'build_Book Template/Book Template.bcf' does not contain any citations!
-[204] Biber.pm:132> INFO - WARNINGS: 1
+[85] biber-MSWIN64:340> INFO - === 
+[114] Biber.pm:418> INFO - Reading 'build_Book Template/Book Template.bcf'
+[197] Biber.pm:978> INFO - Found 0 citekeys in bib section 0
+[208] bbl.pm:654> INFO - Writing 'build_Book Template/Book Template.bbl' with encoding 'UTF-8'
+[208] bbl.pm:757> INFO - Output to build_Book Template/Book Template.bbl
+[209] Biber.pm:130> WARN - The file 'build_Book Template/Book Template.bcf' does not contain any citations!
+[209] Biber.pm:132> INFO - WARNINGS: 1
