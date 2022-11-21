@@ -1,0 +1,20 @@
+\babel@toc {english}{}\relax 
+\contentsline {chapter}{\numberline {1}Commands Similar to Report Class}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}What This Is}{1}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Editing the Preamble and Titlepage}{1}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}The Parameters and What They Do}{1}{subsection.1.2.1}%
+\contentsline {section}{\numberline {1.3}The Custom Commands / Macros}{3}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Cross Referencing Other Sections}{3}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Creating References and Appendices}{4}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Title Page Commands}{4}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Extra Section Command}{4}{subsection.1.3.4}%
+\contentsline {subsection}{\numberline {1.3.5}Superscript and Subscript}{4}{subsection.1.3.5}%
+\contentsline {subsection}{\numberline {1.3.6}Maths Commands}{4}{subsection.1.3.6}%
+\contentsline {chapter}{\numberline {2}Book Commands}{6}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Custom Commands / Macros}{6}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Other Useful Commands}{6}{section.2.2}%
+\contentsline {chapter}{References}{7}{chapter*.2}%
+\contentsline {chapter}{Appendices}{8}{appendix*.3}%
+\contentsline {section}{\numberline {A.1}Example Figure}{8}{section.A.1}%
+\contentsline {section}{\numberline {A.2}Example Table}{8}{section.A.2}%
+\contentsline {section}{\numberline {A.3}Example Equation}{8}{section.A.3}%

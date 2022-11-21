@@ -1,0 +1,15 @@
+[0] Config.pm:306> INFO - This is Biber 2.18
+[0] Config.pm:309> INFO - Logfile is 'build_Book Template Guide/Book Template Guide.blg'
+[84] biber-MSWIN64:340> INFO - === 
+[115] Biber.pm:418> INFO - Reading 'build_Book Template Guide/Book Template Guide.bcf'
+[202] Biber.pm:978> INFO - Found 1 citekeys in bib section 0
+[213] Biber.pm:4401> INFO - Processing section 0
+[224] Biber.pm:4592> INFO - Looking for bibtex file 'references.bib' for section 0
+[264] bibtex.pm:1713> INFO - LaTeX decoding ...
+[271] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
+[298] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[298] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[298] Biber.pm:4221> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[298] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
+[299] bbl.pm:654> INFO - Writing 'build_Book Template Guide/Book Template Guide.bbl' with encoding 'UTF-8'
+[300] bbl.pm:757> INFO - Output to build_Book Template Guide/Book Template Guide.bbl

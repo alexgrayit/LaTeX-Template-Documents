@@ -1,0 +1,37 @@
+\documentclass[Book Template.tex]{subfiles}
+\begin{document}
+
+    \chapter{Book Commands}
+        \label{ch: Book Commands}
+        \thispagestyle{noheader}
+
+        \section{Custom Commands / Macros}
+            \label{sec: Custom Commands Book}
+
+            \verb+\ToC+\\
+            The Table of Contents in the book class tends to misbehave a little more so this command sets up the Table of Contents, inserts it and adds a hyperlink target \verb+ToC+ so that the header can link back to it.
+
+            \verb+\setChapterFormatArabic+\\
+            Includes the code from \verb+Chapter Type 1.tex+ which configures the chapter title formatting with different text and number formatting. Edit the file to edit what the command does.
+
+            \verb+\setChapterFormatRoman+\\
+            Includes the code from \verb+Chapter Type 2.tex+ which configures the chapter title formatting with different text and number formatting. Edit the file to edit what the command does.
+
+            \verb+\setChapterFormatAppendix+\\
+            Includes the code from \verb+Chapter Type Appendices.tex+ which configures the chapter title formatting to just say Appendices. Edit the file to edit what the command does.
+
+            \verb+\setChapterFormatReferences+\\
+            Includes the code from \verb+Chapter Type References.tex+ which configures the chapter title formatting to just say References. Edit the file to edit what the command does.
+
+        \section{Other Useful Commands}
+
+            \verb+\setcounter{chapter}{<n>}+\\
+            Any level above \verb+<n>+ isn't numbered, where chapters are level 0, so setting \verb+<n>+=-1 means nothing will be numbered, 0 only chapters, etc.
+
+            \verb+\frontmatter+ and \verb+\mainmatter+\\
+            Sets up the page numbers and page formatting. For instance the \verb+\chapter{}+ command has different behaviour in the front matter compared to the main matter.
+
+            \verb+\setcounter{chapter}{<n>}+\\
+            Sets the current chapter number to \verb+<n>+. Helpful if you want specific numbering.
+\end{document}
+

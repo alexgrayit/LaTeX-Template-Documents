@@ -1,0 +1,204 @@
+\documentclass[Book Template.tex]{subfiles}
+\begin{document}
+
+    \chapter{Commands Similar to Report Class}
+        \label{ch: Commands Shared with Report}
+        \thispagestyle{noheader}
+
+        \section{What This Is}
+            \label{sec: what this is}
+            
+            Here I've used the \verb+Book Template.tex+ document to create a guide to said document. Below is a guide to how to edit the \LaTeX~if you are new, as well as the different commands that have been added on top of the default \LaTeX~commands.
+        
+
+        \section{Editing the Preamble and Titlepage}
+            \label{sec: editing the preamble}
+
+            To edit the preamble (provided you're somewhat new to \LaTeX) scroll to the bottom of \\\verb+Report Preamble.tex+ until you see the comment:
+
+            \begin{lstlisting}
+% -------------------------------------------------------------
+%   --- New LaTeX users feel free to edit what is below ---   |
+% -------------------------------------------------------------
+            \end{lstlisting}
+
+
+
+            \subsection{The Parameters and What They Do}
+                \label{subsec: the parameters and what they do}
+
+                \verb+\BookName{Book Name}+\\
+                This edits the name of the book that appears in the title.
+
+                \verb+\author{Author 1, Author 2, Author 3}+\\
+                This edits the author field on the titlepage. To add a new author add a \verb+\\+ between names. To increase the spacing change it to a \verb+\\[<extra spacing>]+ e.g. \verb+\\[2mm]+.
+
+                \verb+\date{}+\\
+                This adds the date to the titlepage. If the field is empty it doesn't add it to the page. Making the field \verb+\today+ automatically changes the field to the date of compilation.
+
+                %More complex commands
+                \verb+\title{\BookName}+\\
+                Changes the title field. By default uses the \verb+\BookName+ macro but can be edited to add extra text. (\LaTeX~tries to outsmart you if you add text after a command by removing the space between the command text and the new text, use a ``\verb+~+'' e.g. \verb+\BookName~extra text+ to force it to add text.)
+
+                \verb+\numberwithin{equation}{chapter}+\\
+                Changes the numbering of equations. As above it numbers them as (\verb+<chap num>.<eq num>+) where the equation number counter gets reset at the start of each chapter. To just number them by equation (ignoring chapters) make the second field empty.
+
+                \newpage
+
+                \verb+\setlength{\parindent}{0em}+\\
+                This sets the indent at the start of a paragraph. \LaTeX~treats a new paragraph as starting whenever within your \verb+.tex+ file there is an empty line followed by new text. By default \LaTeX~indents the first line of this new text, changing the second field changes this indent.
+
+                \verb+\setlength{\parskip}{1em}+\\
+                This sets the length of a space between paragraphs. LaTeX treats a new paragraph as starting whenever within your \verb+.tex+ file there is an empty line followed by new text. By default \LaTeX~doesn't add any space between paragraphs, changing the second field changes the spacing between paragraphs.
+
+                \verb+\newcommand{\headercase}[1]{\scshape\nouppercase{#1}}+\\
+                Macro for controlling the header style, takes the header text as its argument. \verb+\scshape+ sets it to small caps, you can change this or add multiple styles. Other options include \verb+\itshape+ ({\itshape italic}), \verb+\bfseries+ ({\bfseries bold}) and \verb+\slshape+ ({\slshape slanted}).\\
+                Remove the \verb+\nouppercase+ command to force it to all uppercase.
+
+                \verb+\fancyhead[LO, LE]{\headercase{\leftmark}}+\\
+                This changes the left side of the header on odd and even pages. \verb+\leftmark+ contains the last section that is started on a given page, \verb+\rightmark+ contains the last heading (i.e. including subsections etc.) that is started on a given page.
+
+                \verb+\fancyhead[RO, RE]{\hyperlink{ToC}{Table of Contents}}+\\
+                Changes the right side of the header. Adds a hyperlink back to the table of contents.
+
+                \verb+\fancyfoot[RE, RO]{\small\thepage}+\\
+                Changes the right of the footer on odd and even pages, by default adds the page number with \verb+\thepage+.
+
+        \newpage
+
+        \section{The Custom Commands / Macros}
+            \label{sec: custom commands}
+
+            \subsection{Cross Referencing Other Sections}
+                \label{subsec: cross referencing}
+
+                Internal cross referencing allows you to refer the reader to another part of the document using the corresponding \verb+\label+. The default \LaTeX~commands are not terrible but by default it only generates a hyperlinked form of the number of whatever you're referring to. Instead we can use the commands below.
+
+                \verb+\chapref{<label>}+ or \verb+\Chapref{<label>}+\\
+                This generates a cross reference to a chapter, \verb+\Chapref+ capitalises the word ``Chapter''. E.g. there is \chapref{ch: Book Commands} or \Chapref{ch: Book Commands}.
+
+                \verb+\secref{<label>}+\\
+                This references a section by number and name e.g. \secref{sec: editing the preamble}.\\
+                This can also be changed to just reference by just number or name by changing the line in the preamble from \verb+\newcommand{\secref}[1]{\secrefNumName{#1}}+ to:\\
+                \verb+\newcommand{\secref}[1]{\secrefNum{#1}}+ $\rightarrow$ \secrefNum{sec: editing the preamble}\\
+                \verb+\newcommand{\secref}[1]{\secrefName{#1}}+ $\rightarrow$ \secrefName{sec: editing the preamble}
+                
+                \verb+\figref{<label>}+ or \verb+\Figref{<label>}+\\
+                This generates a cross reference to a figure, \verb+\Figref+ capitalises the word ``Figure''. E.g. there is \figref{fig: latex logo} or \Figref{fig: latex logo}.
+
+                \verb+\eqref{<label>}+ or \verb+\Eqref{<label>}+\\
+                This generates a cross reference to an equation, \verb+\Eqref+ capitalises the word ``Equation''. E.g. there is \eqref{eq: Gauss Law} or \Eqref{eq: Gauss Law}.
+
+                \verb+\tableref{<label>}+ or \verb+\Tableref{<label>}+\\
+                This generates a cross reference to a table, \verb+\Table+ capitalises the word ``Table''. E.g. there is \tableref{table: example} or \Tableref{table: example}.
+
+                \verb+\appref{<label>}+ or \verb+\Appref{<label>}+\\
+                This generates a cross reference to an appendix, \verb+\Appref+ capitalises the word ``Appendix''. E.g. there is \appref{app: example figure} or \Appref{app: example figure}.
+
+                \verb+\eqnum{<label>}+\\
+                Just grabs the number of an equation. If you want to repeat an equation but keep the original number you can use \verb+\tag{\eqnum{<label>}}+ where \verb+<label>+ is the label of the original equation.
+
+            \newpage
+
+            \subsection{Creating References and Appendices}
+                \label{subsec: creating references and appendices}
+
+                To streamline creating the references list and appendices there are two commands:
+
+                \verb+\references+\\
+                This prints the list of (cited\footnote{\LaTeX~uses the \BibTeX~engine to generate references. The advantage is you can have a big file of references and it does all the styling for you, the downside is that it only adds to the referencing list the ones that you in-text cite.}) references and adds a line to the table of contents for the references. To change the referencing style change the line \\\verb+\usepackage[backend=biber, style=phys]{biblatex}+. See \textcite{referencing-styles} for other styles.
+
+                \verb+\appendices+\\
+                This starts the appendices section, changes the header and reformats the titles so that subsections look like sections etc. This is because to get the numbering correct each appendix has to be a subsection.
+
+
+            \subsection{Title Page Commands}
+                \label{subsec: title page commands}
+
+                There are two titlepage commands that can be used:
+
+                \verb+\fullPageTitle+\\
+                Creates full title page as is in this document. To customise the titlepage edit the parameters in the preamble as per \secref{subsec: the parameters and what they do}.
+
+                \verb+\topTitle+\\
+                Creates a title at the top of the page. This is intended for scientific reports which are typically more understated with an abstract below the title.
+
+
+            \subsection{Extra Section Command}
+                \label{subsec: extra section command}
+
+                Typically \LaTeX~only allows 3 levels of sections: \verb+\section+, \verb+\subsection+ and \verb+\subsubsection+. I have added a 4\super{th} command \verb+\subsubsubsection+.
+
+
+            \subsection{Superscript and Subscript}
+                \label{subsec: superscript and subscript}
+
+                Shortcuts for superscript and subscript in text \verb+\super{}+ and \verb+\sub{}+.\\
+                E.g. \verb+1\super{st}+ $\to$ 1\super{st} and \verb+12\sub{dec}+ $\to$ 12\sub{dec}.
+
+
+            \subsection{Maths Commands}
+                \label{subsec: maths commands}
+
+                \verb+\d+ \footnote{overrides underdot accent.}\\
+                A different font `d' for integrals.
+                \begin{equation*}
+                    x = \int v_x \d x
+                \end{equation*}
+
+                \newpage
+
+                \verb+\ud+\\
+                A different font `d' for integrals with a space.
+                \begin{equation*}
+                    x = \int v_x \ud x
+                \end{equation*}
+
+                \verb+\Reals+ $\Reals$
+                
+                \verb+\Complexs+ $\Complexs$
+                
+                \verb+\Integers+ $\Integers$
+                
+                \verb+\Naturals+ $\Naturals$
+                
+                \verb+\Rationals+ $\Rationals$ 
+
+                \verb+\Primes+ $\Primes$
+
+                \verb+\emf+ $\emf$
+
+                \verb+\deq+ $\deq$
+
+                \verb+\bfrac{}+ and \verb+\bint{}+\\
+                Commands that force sizing of fractions and integrals to be big.
+                
+                \verb+\vect{}+ and \verb+\vhat{}+\\
+                Custom vector formatting e.g. $\vect{v}$ and $\vhat{v}$.
+
+                \verb+\hvec{}+\\
+                Vector with harpoon accent e.g. $\hvec{v}$
+
+                \verb+\svec{}+\\
+                Vector with squiggle accent e.g. $\svec{v}$
+
+                \verb+\bvec{}+\\
+                Vector with bold text e.g. $\bvec{v}$.
+
+                \verb+\lhvec{}+ and \verb+\lvect{}+\\
+                A long vector with harpoon accent e.g. $\lhvec{AB}$ and $\lvect{AB}$.
+
+                \verb+\vmod{}+\\
+                Vector modulus notation e.g. \verb+\vmod{x}+ = $\vmod{x}$.
+
+                \verb+\Matrix{}+\\
+                Shortcut for matrix environment surrounded by square brackets e.g. \verb+\Matrix{1 & 2 \\ 3 & 4}+
+                \begin{equation*}
+                    \Matrix{1 & 2 \\ 3 & 4}
+                \end{equation*}
+
+                \verb+\proj{a}{b}+\\
+                Projection of $a$ onto $b$ e.g. $\proj{a}{b}$
+    
+\end{document}
+
