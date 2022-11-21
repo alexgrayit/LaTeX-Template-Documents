@@ -1,7 +1,7 @@
 PWD e:\LaTeX Template Documents\Formula Sheet Template
 INPUT C:\Users\Alex\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT e:\LaTeX Template Documents\Formula Sheet Template\Formula Sheet.tex
-OUTPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet\Formula Sheet.log
+INPUT e:\LaTeX Template Documents\Formula Sheet Template\Formula Sheet Template.tex
+OUTPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet Template\Formula Sheet Template.log
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\base\article.cls
@@ -1756,10 +1756,10 @@ INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmr.fd
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmr.fd
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\lm\t1lmr.fd
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr12.tfm
-INPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet\Formula Sheet.aux
-INPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet\Formula Sheet.aux
-INPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet\Formula Sheet.aux
-OUTPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet\Formula Sheet.aux
+INPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet Template\Formula Sheet Template.aux
+INPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet Template\Formula Sheet Template.aux
+INPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet Template\Formula Sheet Template.aux
+OUTPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet Template\Formula Sheet Template.aux
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
@@ -1781,7 +1781,7 @@ INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sy
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\graphics\graphicx.sty
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
-OUTPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet\Formula Sheet.pdf
+OUTPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet Template\Formula Sheet Template.pdf
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\graphics\color.sty
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-english.trsl
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\translations-basic-dictionary-english.trsl
@@ -1790,13 +1790,13 @@ INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\translations\dicts\t
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\english.lbx
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\english.lbx
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex\latex\biblatex\lbx\english.lbx
-OUTPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet\Formula Sheet.bcf
-INPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet\Formula Sheet.bbl
-INPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet\Formula Sheet.bbl
-INPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet\Formula Sheet.bbl
-INPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet\Formula Sheet.bbl
-INPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet\Formula Sheet.bbl
-INPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet\Formula Sheet.bbl
+OUTPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet Template\Formula Sheet Template.bcf
+INPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet Template\Formula Sheet Template.bbl
+INPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet Template\Formula Sheet Template.bbl
+INPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet Template\Formula Sheet Template.bbl
+INPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet Template\Formula Sheet Template.bbl
+INPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet Template\Formula Sheet Template.bbl
+INPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet Template\Formula Sheet Template.bbl
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmcsc10.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmcsc10.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmcsc10.tfm
@@ -1865,9 +1865,9 @@ INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbsy10.tf
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmbsy7.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmri12.tfm
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmr10.tfm
-INPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet\Formula Sheet.aux
-INPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet\Formula Sheet.run.xml
-OUTPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet\Formula Sheet.run.xml
+INPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet Template\Formula Sheet Template.aux
+INPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet Template\Formula Sheet Template.run.xml
+OUTPUT e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet Template\Formula Sheet Template.run.xml
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-rm.enc
 INPUT C:\Users\Alex\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc

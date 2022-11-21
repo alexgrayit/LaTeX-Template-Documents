@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>"Formula Sheet".bcf</file>
+      <file>"Formula Sheet Template".bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>"Formula Sheet".bbl</file>
+      <file>"Formula Sheet Template".bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -68,19 +68,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>"Formula Sheet"</infile>
+      <infile>"Formula Sheet Template"</infile>
     </cmdline>
     <input>
-      <file>"Formula Sheet".bcf</file>
+      <file>"Formula Sheet Template".bcf</file>
     </input>
     <output>
-      <file>"Formula Sheet".bbl</file>
+      <file>"Formula Sheet Template".bbl</file>
     </output>
     <provides type="dynamic">
-      <file>"Formula Sheet".bbl</file>
+      <file>"Formula Sheet Template".bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>"Formula Sheet".bcf</file>
+      <file>"Formula Sheet Template".bcf</file>
     </requires>
     <requires type="editable">
       <file>references.bib</file>

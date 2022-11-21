@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.18)  21 NOV 2022 12:59
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.18)  21 NOV 2022 13:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**"e:/LaTeX Template Documents/Formula Sheet Template/Formula Sheet.tex"
-(e:/LaTeX Template Documents/Formula Sheet Template/Formula Sheet.tex
+**"e:/LaTeX Template Documents/Formula Sheet Template/Formula Sheet Template.tex"
+(e:/LaTeX Template Documents/Formula Sheet Template/Formula Sheet Template.tex
 LaTeX2e <2022-11-01>
 L3 programming layer <2022-11-02> (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
@@ -1350,8 +1350,8 @@ Package csquotes Info: Redefining alias 'default' -> 'english'.
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 5.
  (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet\Formula Sheet.aux)
-\openout1 = `"Formula Sheet.aux"'.
+) (e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet Template\Formula Sheet Template.aux)
+\openout1 = `"Formula Sheet Template.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
@@ -1462,11 +1462,11 @@ File: english.lbx 2022/07/12 v3.18b biblatex localization (PK/MW)
 Package biblatex Info: Input encoding 'utf8' detected.
 Package biblatex Info: Automatic encoding selection.
 (biblatex)             Assuming data encoding 'utf8'.
-\openout4 = `"Formula Sheet.bcf"'.
+\openout4 = `"Formula Sheet Template.bcf"'.
 
 Package biblatex Info: Trying to load bibliographic data...
-Package biblatex Info: ... file '"Formula Sheet".bbl' found.
- (e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet\Formula Sheet.bbl)
+Package biblatex Info: ... file '"Formula Sheet Template".bbl' found.
+ (e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet Template\Formula Sheet Template.bbl)
 Package biblatex Info: Reference section=0 on input line 5.
 Package biblatex Info: Reference segment=0 on input line 5.
  [1
@@ -1512,21 +1512,21 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has b
 l.48         \end{paracol}
                            [1] [2] 
 AED: lastpage setting LastPage
-(e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet\Formula Sheet.aux)
-Package logreq Info: Writing requests to '"Formula Sheet".run.xml'.
-\openout1 = `"Formula Sheet.run.xml"'.
+(e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet Template\Formula Sheet Template.aux)
+Package logreq Info: Writing requests to '"Formula Sheet Template".run.xml'.
+\openout1 = `"Formula Sheet Template.run.xml"'.
 
  ) 
 Here is how much of TeX's memory you used:
- 56460 strings out of 475285
- 1290854 string characters out of 2774591
- 2127630 words of memory out of 12000000
- 77029 multiletter control sequences out of 15000+600000
+ 56461 strings out of 475285
+ 1291127 string characters out of 2774591
+ 2127694 words of memory out of 12000000
+ 77030 multiletter control sequences out of 15000+600000
  522205 words of font info for 70 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 91i,11n,85p,1211b,1777s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 91i,11n,85p,1220b,1777s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}<C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb>
-Output written on "e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet\Formula Sheet.pdf" (3 pages, 141701 bytes).
+Output written on "e:\LaTeX Template Documents\Formula Sheet Template\build_Formula Sheet Template\Formula Sheet Template.pdf" (3 pages, 142575 bytes).
 PDF statistics:
  81 PDF objects out of 1000 (max. 8388607)
  3 named destinations out of 1000 (max. 500000)
