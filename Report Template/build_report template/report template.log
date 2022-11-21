@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.18)  21 NOV 2022 02:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.10) (preloaded format=pdflatex 2022.11.18)  21 NOV 2022 14:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1337,11 +1337,11 @@ Package biblatex Info: ... and expl3
 Package: blx-case-expl3 2022/07/12 v3.18b expl3 case changing code for biblatex
 ))
 \tablegap=\skip136
-Package hyperref Info: Option `colorlinks' set `true' on input line 242.
+Package hyperref Info: Option `colorlinks' set `true' on input line 249.
  (C:\Users\Alex\AppData\Local\Programs\MiKTeX\tex/latex/bold-extra\bold-extra.sty
 Package: bold-extra 2001/11/13 v0.1 Use fonts from cm/mf-extra/bold
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 485.
+Package hyperref Info: Option `colorlinks' set `true' on input line 489.
 )
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
@@ -1409,7 +1409,7 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 * \evensidemargin=-15.36449pt
 * \topmargin=-38.1381pt
 * \headheight=15.2pt
-* \headsep=25.0pt
+* \headsep=14.09651pt
 * \topskip=12.0pt
 * \footskip=30.0pt
 * \marginparwidth=35.0pt
@@ -1532,15 +1532,15 @@ Package logreq Info: Writing requests to '"Report Template".run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 55944 strings out of 475285
- 1279103 string characters out of 2774591
- 2130100 words of memory out of 12000000
- 76485 multiletter control sequences out of 15000+600000
+ 55945 strings out of 475285
+ 1279113 string characters out of 2774591
+ 2130132 words of memory out of 12000000
+ 76486 multiletter control sequences out of 15000+600000
  540518 words of font info for 82 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  91i,14n,85p,1206b,1899s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc} <C:\Users\Alex\AppData\Local\MiKTeX\fonts/pk/ljfour/public/esint/dpi720\esint10.pk><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmib7.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Alex/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on "e:\LaTeX Template Documents\Report Template\build_Report Template\Report Template.pdf" (4 pages, 170868 bytes).
+Output written on "e:\LaTeX Template Documents\Report Template\build_Report Template\Report Template.pdf" (4 pages, 170309 bytes).
 PDF statistics:
  160 PDF objects out of 1000 (max. 8388607)
  18 named destinations out of 1000 (max. 500000)
