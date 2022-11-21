@@ -34,6 +34,7 @@
 \usepackage{babel} % language options
 \usepackage[utf8]{inputenc} % adds extra unicode characters
     \DeclareUnicodeCharacter{2212}{-}
+\usepackage{dtk-logos}
 \usepackage{multicol}
 \usepackage{paracol}
 \usepackage{fix-cm}
@@ -106,7 +107,7 @@
 % || --------------------------------------- REFERENCING ----------------------------------------- ||
 % ---------------------------------------------------------------------------------------------------
 
-\usepackage[backend=biber, style=apa]{biblatex}
+\usepackage[backend=biber, style=phys]{biblatex}
 \addbibresource{references.bib}% Syntax for version >= 1.2
 % the references.bib should be in the same directory as the tex file
 
@@ -136,7 +137,8 @@
 \setlength{\jot}{0.5em} % length between newlines of align environment
 
 % Symbols and Notation
-\newcommand{\ud}{\, \, \mathrm{d}}
+\newcommand{\ud}{\ \mathrm{d}}
+\renewcommand{\d}{\mathrm{d}}
 \newcommand{\Reals}{\mathbb{R}}
 \newcommand{\Complexs}{\mathbb{C}}
 \newcommand{\Integers}{\mathbb{Z}}
@@ -194,16 +196,28 @@
 % || ------------------------------- INTERNAL REFERENCING COMMANDS ------------------------------- ||
 % ---------------------------------------------------------------------------------------------------
 
-\newcommand{\secrefNameNum}[1]{\mbox{\hyperref[#1]{\S}\ref{#1}\hyperref[#1]{:\hspace{1pt}}\nameref{#1}}} % ref with Num:Name
+\newcommand{\secrefNumName}[1]{\mbox{\hyperref[#1]{\S}\ref{#1}\hyperref[#1]{:\hspace{1pt}}\nameref{#1}}} % ref with Num:Name
 \newcommand{\secrefName}[1]{\mbox{\hyperref[#1]{\S\hspace{1pt}}\nameref{#1}}} % ref with just name
 \newcommand{\secrefNum}[1]{\mbox{\hyperref[#1]{\S}\ref{#1}}} % ref with just num
 
-\newcommand{\secref}[1]{\secrefName{#1}} % choose method of section reference
-\newcommand{\appref}[1]{\mbox{\hyperref[#1]{Appendix\hspace{2pt}}\ref{#1}}}
-\renewcommand{\eqref}[1]{\mbox{\hyperref[#1]{Eq.\hspace{2pt}}\ref{#1}}}
+\newcommand{\secref}[1]{\secrefNumName{#1}} % choose method of section reference
+
+
 \newcommand{\eqnum}[1]{\ref*{#1}}
-\newcommand{\figref}[1]{\mbox{\hyperref[#1]{Fig.\hspace{2pt}}\ref{#1}}}
-\newcommand{\tableref}[1]{\mbox{\hyperref[#1]{Table \hspace{2pt}}\ref{#1}}}
+
+
+% Lower case commands
+\newcommand{\appref}[1]{\mbox{\hyperref[#1]{appendix\hspace{2pt}}\ref{#1}}}
+\renewcommand{\eqref}[1]{\mbox{\hyperref[#1]{equation\hspace{2pt}}\ref{#1}}}
+\newcommand{\figref}[1]{\mbox{\hyperref[#1]{figure\hspace{2pt}}\ref{#1}}}
+\newcommand{\tableref}[1]{\mbox{\hyperref[#1]{table\hspace{2pt}}\ref{#1}}}
+
+% Capitalised Commands
+\newcommand{\Appref}[1]{\mbox{\hyperref[#1]{Appendix\hspace{2pt}}\ref{#1}}}
+\newcommand{\Eqref}[1]{\mbox{\hyperref[#1]{Equation\hspace{2pt}}\ref{#1}}}
+\newcommand{\Figref}[1]{\mbox{\hyperref[#1]{Figure\hspace{2pt}}\ref{#1}}}
+\newcommand{\Tableref}[1]{\mbox{\hyperref[#1]{Table\hspace{2pt}}\ref{#1}}}
+
 
 % use \cite and \textcite to do references
 
@@ -255,9 +269,11 @@
 
 
 \newcommand{\references}{
+    \fancyhead[L]{\headercase{References}}
     \addcontentsline{toc}{section}{References}
     \setlength\bibitemsep{1.5\itemsep}
-    \printbibliography
+    \defbibheading{SpecialBibHeadingStyle}{\section*{References}}
+    \printbibliography[heading=SpecialBibHeadingStyle]
 }
 
 
@@ -265,8 +281,8 @@
 % Use at start of appendix section
 \newcommand{\appendices}{
     \appendix
-    \titleformat{\section}{\normalfont\LARGE\bfseries}{\thesection}{1em}{}
-    \fancyhead[L]{APPENDICES}
+    \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+    \fancyhead[L]{\headercase{Appendices}}
 
     \section*{Appendices}
     \addtocounter{section}{1}
@@ -358,15 +374,14 @@
         \fi
         
 
+        \vspace{\stretch{4}} % Fill the rest of the page with whitespace
+
         % DATE ----------------------------------------------------------------------------------------
         \if \@date \empty
         \else
             {\large ~\@date}\\ % Date, change the \today to a set date if you want to be precise
+            \vspace{4em}
         \fi
-        
-        
-
-        \vspace{\stretch{4}} % Fill the rest of the page with whitespace
         
         \end{titlepage}
 }
@@ -402,7 +417,7 @@
 \renewcommand{\footrulewidth}{0.5pt}
 
 % overridden by customisation below
-\fancyhead[L]{\leftmark} % Left header - last section on page
+\fancyhead[L]{\headercase{\leftmark}} % Left header - last section on page
 \fancyhead[R]{\SID} % Right Header
 \fancyfoot[C]{\thepage} % Puts page number bottom centre
 
@@ -476,10 +491,10 @@
 }
 
 
-\fancyhead[L]{\leftmark} % Left header - last section on page
-\fancyhead[R]{\@title~\Year} % Right Header
-\fancyfoot[C]{\thepage} % Puts page number bottom centre
-
+\newcommand{\headercase}[1]{\scshape\nouppercase{#1}}
+\fancyhead[L]{\headercase{\leftmark}} % Left header - last section on page
+\fancyhead[R]{\SID} % Right Header
+\fancyfoot[C]{\small\thepage} % Puts page number bottom centre
 
 
 
