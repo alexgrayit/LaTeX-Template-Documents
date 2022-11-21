@@ -8,7 +8,7 @@
 \contentsline {subsection}{\numberline {2.5}Title Page Commands}{4}{subsection.2.5}%
 \contentsline {subsection}{\numberline {2.6}Extra Section Command}{4}{subsection.2.6}%
 \contentsline {subsection}{\numberline {2.7}Superscript and Subscript}{4}{subsection.2.7}%
-\contentsline {section}{\numberline {3}Editing the Preamble and Titlepage}{4}{section.3}%
+\contentsline {section}{\numberline {3}Editing the Preamble and Titlepage}{5}{section.3}%
 \contentsline {subsection}{\numberline {3.1}The Parameters and What They Do}{5}{subsection.3.1}%
 \contentsline {section}{References}{i}{subsection.3.1}%
 \contentsline {section}{Appendices}{ii}{subsection.3.1}%
