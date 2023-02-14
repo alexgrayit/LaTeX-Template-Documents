@@ -16,7 +16,7 @@ There is also a very useful guide to LaTeX that, while somewhat long, can be ver
 
 [The Not So Short Introduction to LaTeX](https://mirror.aarnet.edu.au/pub/CTAN/info/lshort/english/lshort.pdf)
 
-[Documentation reference](https://www.ctan.org/tex-archive/info/lshort/)
+[Multi-Language Versions](https://www.ctan.org/tex-archive/info/lshort/)
 
 
 ## Using the Templates
