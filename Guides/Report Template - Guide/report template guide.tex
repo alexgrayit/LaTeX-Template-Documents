@@ -32,10 +32,10 @@
 
         To edit the preamble (provided you're somewhat new to \LaTeX) scroll to the bottom of \\\verb+Report Preamble.tex+ until you see the comment:
 
-        \begin{lstlisting}
-% -------------------------------------------------------------
-%   --- New LaTeX users feel free to edit what is below ---   |
-% -------------------------------------------------------------
+        \begin{lstlisting}[autogobble]
+            % -------------------------------------------------------------
+            %   --- New LaTeX users feel free to edit what is below ---   |
+            % -------------------------------------------------------------
         \end{lstlisting}
 
 
@@ -122,6 +122,9 @@
 
             \verb+\appref{<label>}+ or \verb+\Appref{<label>}+\\
             This generates a cross reference to an appendix, \verb+\Appref+ capitalises the word ``Appendix''. E.g. there is \appref{app: example figure} or \Appref{app: example figure}.
+
+            \verb+\coderef{<label>}+ or \verb+\Coderef{<label>}+\\
+            This generates a cross reference to a listing (code), \verb+\Coderef+ capitalises the word ``Listing''. E.g. there is \coderef{lst: code example} or \Coderef{lst: code example}.
 
             \verb+\eqnum{<label>}+\\
             Just grabs the number of an equation. If you want to repeat an equation but keep the original number you can use \verb+\tag{\eqnum{<label>}}+ where \verb+<label>+ is the label of the original equation.
@@ -283,6 +286,17 @@
                 \oiint_S \vect{E} \cdot \d\vect{A} = \frac{Q_{\text{enc}}}{\varepsilon_0}
                 \label{eq: Gauss Law}
             \end{equation}
+
+        \subsection{Example Code}
+            
+            {
+            \begin{lstlisting}[autogobble]
+                Example Code
+                    Indentation also works
+            \end{lstlisting}
+            \captionof{lstlisting}{Code caption}
+            \label{lst: code example}
+            }
 
             
             

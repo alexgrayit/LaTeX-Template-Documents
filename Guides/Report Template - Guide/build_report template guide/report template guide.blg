@@ -1,15 +1,15 @@
-[0] Config.pm:306> INFO - This is Biber 2.18
-[0] Config.pm:309> INFO - Logfile is 'build_report template guide/report template guide.blg'
-[85] biber-MSWIN64:340> INFO - === 
-[114] Biber.pm:418> INFO - Reading 'build_report template guide/report template guide.bcf'
-[197] Biber.pm:978> INFO - Found 1 citekeys in bib section 0
-[209] Biber.pm:4401> INFO - Processing section 0
-[219] Biber.pm:4592> INFO - Looking for bibtex file 'references.bib' for section 0
-[259] bibtex.pm:1713> INFO - LaTeX decoding ...
-[266] bibtex.pm:1518> INFO - Found BibTeX data source 'references.bib'
-[291] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
-[291] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
-[291] Biber.pm:4221> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
-[292] Biber.pm:4227> INFO - No sort tailoring available for locale 'en-US'
-[293] bbl.pm:654> INFO - Writing 'build_report template guide/report template guide.bbl' with encoding 'UTF-8'
-[293] bbl.pm:757> INFO - Output to build_report template guide/report template guide.bbl
+[0] Config.pm:307> INFO - This is Biber 2.19
+[0] Config.pm:310> INFO - Logfile is 'build_report template guide/report template guide.blg'
+[89] biber-MSWIN64:340> INFO - === 
+[120] Biber.pm:419> INFO - Reading 'build_report template guide/report template guide.bcf'
+[205] Biber.pm:979> INFO - Found 1 citekeys in bib section 0
+[216] Biber.pm:4419> INFO - Processing section 0
+[226] Biber.pm:4610> INFO - Looking for bibtex file 'references.bib' for section 0
+[276] bibtex.pm:1713> INFO - LaTeX decoding ...
+[284] bibtex.pm:1519> INFO - Found BibTeX data source 'references.bib'
+[309] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'variable = shifted' with 'variable = non-ignorable'
+[309] UCollate.pm:68> INFO - Overriding locale 'en-US' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[309] Biber.pm:4239> INFO - Sorting list 'none/global//global/global' of type 'entry' with template 'none' and locale 'en-US'
+[309] Biber.pm:4245> INFO - No sort tailoring available for locale 'en-US'
+[309] bbl.pm:660> INFO - Writing 'build_report template guide/report template guide.bbl' with encoding 'UTF-8'
+[310] bbl.pm:763> INFO - Output to build_report template guide/report template guide.bbl

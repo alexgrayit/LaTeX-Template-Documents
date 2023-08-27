@@ -44,10 +44,10 @@
   <internal package="biblatex" priority="9" active="0">
     <generic>latex</generic>
     <provides type="dynamic">
-      <file>"Report Template".bcf</file>
+      <file>"report template".bcf</file>
     </provides>
     <requires type="dynamic">
-      <file>"Report Template".bbl</file>
+      <file>"report template".bbl</file>
     </requires>
     <requires type="static">
       <file>blx-dm.def</file>
@@ -67,19 +67,19 @@
     <generic>biber</generic>
     <cmdline>
       <binary>biber</binary>
-      <infile>"Report Template"</infile>
+      <infile>"report template"</infile>
     </cmdline>
     <input>
-      <file>"Report Template".bcf</file>
+      <file>"report template".bcf</file>
     </input>
     <output>
-      <file>"Report Template".bbl</file>
+      <file>"report template".bbl</file>
     </output>
     <provides type="dynamic">
-      <file>"Report Template".bbl</file>
+      <file>"report template".bbl</file>
     </provides>
     <requires type="dynamic">
-      <file>"Report Template".bcf</file>
+      <file>"report template".bcf</file>
     </requires>
     <requires type="editable">
       <file>references.bib</file>

@@ -9,8 +9,9 @@
 \contentsline {subsection}{\numberline {3.4}Extra Section Command}{4}{subsection.3.4}%
 \contentsline {subsection}{\numberline {3.5}Superscript and Subscript}{4}{subsection.3.5}%
 \contentsline {subsection}{\numberline {3.6}Maths Commands}{4}{subsection.3.6}%
-\contentsline {section}{References}{i}{subsection.3.6}%
-\contentsline {section}{Appendices}{ii}{subsection.3.6}%
+\contentsline {section}{References}{i}{section*.1}%
+\contentsline {section}{Appendices}{ii}{section*.2}%
 \contentsline {subsection}{\numberline {A.1}Example Figure}{ii}{subsection.A.1}%
 \contentsline {subsection}{\numberline {A.2}Example Table}{ii}{subsection.A.2}%
 \contentsline {subsection}{\numberline {A.3}Example Equation}{ii}{subsection.A.3}%
+\contentsline {subsection}{\numberline {A.4}Example Code}{ii}{subsection.A.4}%

@@ -7,8 +7,8 @@
 \contentsline {subsection}{\numberline {2.2}Hardware Requirements}{1}{subsection.2.2}%
 \contentsline {section}{\numberline {3}Technical Specifications}{1}{section.3}%
 \contentsline {section}{\numberline {4}Evaluation of Solution}{1}{section.4}%
-\contentsline {section}{References}{i}{section.4}%
-\contentsline {section}{Appendices}{i}{section.4}%
+\contentsline {section}{References}{i}{section*.1}%
+\contentsline {section}{Appendices}{i}{section*.2}%
 \contentsline {subsection}{\numberline {A.1}Example}{i}{subsection.A.1}%
 \contentsline {subsection}{\numberline {A.2}Example Table}{i}{subsection.A.2}%
 \contentsline {subsection}{\numberline {A.3}Example Equation}{i}{subsection.A.3}%
