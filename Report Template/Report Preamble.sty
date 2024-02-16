@@ -52,6 +52,7 @@
 \usepackage{subcaption} % improves captions for subfigures
 
 \usepackage[]{todonotes} %use [disable] option to turn off all todo functions
+\setlength{\marginparwidth}{2cm}
 
 \usepackage{placeins} % Adds the \FloatBarrier command
 \usepackage[hidelinks, plainpages=false, pdfpagelabels]{hyperref} % Hyperlinks - yay we live in the modern world
@@ -79,7 +80,13 @@
 
 % Physics Packages
 \usepackage[arrowdel]{physics} % - \grad{} \div{} \curl{} \laplacian{}
-\usepackage{siunitx} % adds si units \si{\unit} (it's hard to use at first, look up the documentation)
+\usepackage{siunitx} % adds si units \unit{\<unit name(s)>} (it's hard to use at first, look up the documentation)
+
+\AtBeginDocument{\RenewCommandCopy\qty\SI}
+
+\ExplSyntaxOn
+\msg_redirect_name:nnn{siunitx}{physics-pkg}{none}
+\ExplSyntaxOff
 
 
 % Code Formatting Packages
@@ -440,6 +447,8 @@
 
         % HEADINGS -----------------------------------------------------------------------------------
         \vspace*{\fill}
+        \includegraphics[width=0.15\textwidth]{usyd logo.png}
+
         \if \Uni \empty
         \else
             {\scshape\huge ~\Uni}\\[1em] % Name of your university/college
