@@ -126,23 +126,15 @@
 % Example Code Blocks For Using Files
 
 % MATLAB example
-% ~
 
-% {
-% \lstinputlisting[frame=single, numbers=left, style=Matlab-editor, language=matlab, basicstyle=\codesize, breaklines=true]{<filepath>}
-% \captionof{lstlisting}{Caption Text}
-% \label{lst: label}
-% }
+% \lstinputlisting[frame=single, numbers=left, style=Matlab-editor, language=matlab, basicstyle=\codesize, breaklines=true, caption=Caption Text, label=lst: label]{<filepath>}
+
 
 
 % PYTHON example
-% ~
 
-% {
-% \lstinputlisting[frame=single, numbers=left, style=python, language=python, basicstyle=\codesize, breaklines=true]{<filepath>}
-% \captionof{lstlisting}{Caption Text}
-% \label{lst: label}
-% }
+% \lstinputlisting[frame=single, numbers=left, style=python, language=python, basicstyle=\codesize, breaklines=true, caption=Caption Text, label=lst: label]{<filepath>}
+
 
 
 
@@ -158,7 +150,7 @@
 
 \usepackage{pgfplots}
     % Dunno, it complains if this isn't here
-    \pgfplotsset{compat=1.17}
+    \pgfplotsset{compat=newest}
 \usepackage{pgf} % allows inclusion of pgf vector graphic images
 \usepackage{adjustbox}
 
@@ -206,8 +198,6 @@
 \setlength{\jot}{0.5em} % length between newlines of align environment
 
 % Symbols and Notation
-\newcommand{\ud}{\ d}
-\renewcommand{\d}{\mathrm{d}}
 \newcommand{\Reals}{\mathbb{R}}
 \newcommand{\Complexs}{\mathbb{C}}
 \newcommand{\Integers}{\mathbb{Z}}
@@ -507,10 +497,8 @@
 % Sets the maximum number of levels in the Table of Contents to x-1
 \setcounter{secnumdepth}{4}
 
-
 \newcommand{\super}{\textsuperscript}
 \newcommand{\sub}{\textsubscript}
-
 
 % Creates new column type for tables
 \newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
@@ -524,11 +512,10 @@
 \setlength{\headheight}{15.2pt}
 \setlength{\headsep}{1.2em}
 
-% overridden by customisation below
+\newcommand{\headercase}[1]{\scshape\nouppercase{#1}}
 \fancyhead[L]{\headercase{\leftmark}} % Left header - last section on page
 \fancyhead[R]{\SID} % Right Header
 \fancyfoot[C]{\small\thepage} % Puts page number bottom centre
-
 
 \fancypagestyle{noheader}{
   \fancyhf{}% Clear header/footer
@@ -564,9 +551,6 @@
 %\date{\today} % make the date the current date
 
 
-
-
-
 % ----------------------------------------------------------------------
 %   --- Semi-Advanced LaTeX users feel free to edit what is below ---  |
 % ----------------------------------------------------------------------
@@ -588,14 +572,6 @@
     urlcolor=blue,
     citecolor=black
 }
-
-
-\newcommand{\headercase}[1]{\scshape\nouppercase{#1}}
-\fancyhead[L]{\headercase{\leftmark}} % Left header - last section on page
-\fancyhead[R]{\SID} % Right Header
-\fancyfoot[C]{\small\thepage} % Puts page number bottom centre
-
-
 
 
 % -----------------------------------------------------------------
