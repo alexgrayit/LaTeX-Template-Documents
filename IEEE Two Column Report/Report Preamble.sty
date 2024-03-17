@@ -32,9 +32,7 @@
 
 
 % Document/Text Formatting Packages
-% \usepackage[a4paper, portrait, right=20mm, left=20mm, top=25mm, bottom=20mm, showframe=false]{geometry} % margins
-\usepackage{geometry}
-\geometry{portrait, textwidth=17cm, textheight=25.5cm, top=15mm, showframe=false}
+\usepackage[a4paper, portrait, textwidth=17cm, textheight=26cm, top=20mm, showframe=false]{geometry} % margins
 \usepackage{booktabs} % tables - needed so that tables from latex table makers work
 \usepackage{babel} % language options
 \usepackage[utf8]{inputenc} % adds extra unicode characters
@@ -336,7 +334,7 @@
 % || ---------------------------------- SECTION FORMATTING --------------------------------------- ||
 % ---------------------------------------------------------------------------------------------------
 
-\setlength{\droptitle}{-10em}
+\setlength{\droptitle}{-8em}
 
 
 %spacing is:  left, before, after
@@ -374,7 +372,7 @@
 
 
 \newcommand{\references}{
-    \fancyhead[L]{\headercase{References}}
+    \fancyhead[L]{\small\headercase{References}}
     \phantomsection
     \addcontentsline{toc}{section}{References}
     \setlength\bibitemsep{1.5\itemsep}
@@ -387,7 +385,7 @@
 
 % Use at start of appendix section
 \newcommand{\Appendices}{
-    \fancyhead[L]{\headercase{Appendices}}
+    \fancyhead[L]{\small\headercase{Appendices}}
 
     \setcounter{section}{0}
     \renewcommand \thesection{\Roman{section}}
@@ -523,10 +521,10 @@
 \setlength{\headsep}{1.2em}
 
 \newcommand{\headercase}[1]{\scshape\nouppercase{#1}}
-\fancyhead[L]{\headercase{\leftmark}} % Left header - last section on page
-\fancyhead[R]{\SID} % Right Header
+\fancyhead[L]{\small\headercase{\leftmark}} % Left header - last section on page
+\fancyhead[R]{\small\SID} % Right Header
 \fancyfoot[C]{\small\thepage} % Puts page number bottom centre
-% \renewcommand{\headrulewidth}{0pt}% No header rule
+\renewcommand{\headrulewidth}{0pt}% No header rule
 
 \fancypagestyle{noheader}{
   \fancyhf{}% Clear header/footer
