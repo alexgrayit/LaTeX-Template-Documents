@@ -363,10 +363,10 @@
 % Custom formatting of ToC, fuck with at your own risk
 \renewcommand{\cftsecleader}{\bfseries\cftdotfill{\cftdotsep}} % adds dots between section titles and page numbers in ToC
 % \cftsetindents{entry}{indent}{numwidth}
-% \cftsetindents{section}{0em}{2.5em}
-% \cftsetindents{subsection}{2.5em}{3.2em}
-% \cftsetindents{subsubsection}{5.7em}{4em}
-% \cftsetindents{paragraph}{6.2em}{3.7em} % subsubsubsections -- by default don't appear in ToC
+\cftsetindents{section}{0em}{2.5em}
+\cftsetindents{subsection}{2.5em}{2.5em}
+\cftsetindents{subsubsection}{5em}{4em}
+\cftsetindents{paragraph}{6.2em}{3.7em} % subsubsubsections -- by default don't appear in ToC
 
 
 \newcommand{\references}{
@@ -387,14 +387,16 @@
     \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
     \fancyhead[L]{\headercase{Appendices}}
 
-    \phantomsection
-    \section*{Appendices}
-    \addtocounter{section}{1}
-    \addcontentsline{toc}{section}{Appendices}
+    \setcounter{section}{0}
 
-    \titleformat{\subsection}{\normalfont\Large\bfseries}{\thesubsection}{1em}{}
-    \titleformat{\subsubsection}{\normalfont\large\bfseries}{\thesubsubsection}{1em}{}
-    \titleformat{\paragraph}{\normalfont\normalsize\bfseries}{\paragraph}{1em}{}
+    \section*{Appendices}
+
+    \renewcommand \thesection{A.\arabic{section}}
+
+    \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
+    \titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+    \titleformat{\subsubsection}{\normalfont\normalsize\bfseries}{\thesubsubsection}{1em}{}
+    \titleformat{\paragraph}{\normalfont\normalsize\itshape\bfseries}{{\normalfont\normalsize\bfseries\theparagraph}}{1em}{}
 }
 
 
