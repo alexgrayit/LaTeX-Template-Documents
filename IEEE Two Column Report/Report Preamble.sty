@@ -32,7 +32,8 @@
 
 
 % Document/Text Formatting Packages
-\usepackage[a4paper, portrait, textwidth=17cm, textheight=26cm, top=20mm, showframe=false]{geometry} % margins
+% \usepackage[a4paper, portrait, textwidth=17cm, textheight=26cm, top=20mm, showframe=false]{geometry} % margins
+\geometry{a4paper, portrait, textwidth=17cm, textheight=26cm, top=13mm, showframe=false}
 \usepackage{booktabs} % tables - needed so that tables from latex table makers work
 \usepackage{babel} % language options
 \usepackage[utf8]{inputenc} % adds extra unicode characters
@@ -385,6 +386,7 @@
 
 % Use at start of appendix section
 \newcommand{\Appendices}{
+    \appendix
     \fancyhead[L]{\small\headercase{Appendices}}
 
     \setcounter{section}{0}
