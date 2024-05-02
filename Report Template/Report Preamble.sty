@@ -216,17 +216,17 @@
 % Vector Formatting
 \newcommand{\hvec}[1]{\accentset{\rightharpoonup{}\vspace{-0.5mm}}{#1}} % harpoon above
 \newcommand{\svec}[1]{\underaccent{\tilde}{#1}} % squiggle below
-\newcommand{\bvec}[1]{\boldsymbol{\mathbf{#1}}} % math bold font
+\newcommand{\bvec}[1]{\bm{\mathrm{#1}}}
 
 % -Long harpoon vector
 \makeatletter
 \newcommand*{\rightharpoonupfill@}{\arrowfill@\relbar\relbar\rightharpoonup}
 \newcommand{\lhvec}{\mathpalette{\overarrow@\rightharpoonupfill@}}
-\newcommand{\lvect}[1]{\bvec{\lhvec{#1}}}%final edit here
+\newcommand{\lvect}[1]{\lhvec{\bvec{#1}}}%final edit here
 % -end Long harpoon vector
 
-\newcommand{\vect}[1]{\bvec{\hvec{#1}}} % used vector format
-\newcommand{\vhat}[1]{\bvec{\hat{#1}}} % used hat format
+\newcommand{\vect}[1]{\hvec{\bvec{#1}}} % used vector format
+\newcommand{\vhat}[1]{\hat{\bvec{#1}}} % used hat format
 
 \newcommand{\vmod}[1]{\left\| #1 \right\|} % modulus notation
 
