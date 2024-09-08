@@ -29,6 +29,7 @@
 
 
 % Document/Text Formatting Packages
+\usepackage{subfiles} % See https://en.wikibooks.org/wiki/LaTeX/Modular_Documents
 \usepackage[a4paper, portrait, right=20mm, left=20mm, top=25mm, bottom=20mm, showframe=false]{geometry} % margins
 \usepackage{booktabs} % tables - needed so that tables from latex table makers work
 \usepackage{babel} % language options
@@ -48,6 +49,7 @@
     \renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % adds dots between section titles and page numbers in ToC
 \usepackage[justification=centering, margin=10mm]{caption} 
 \usepackage{subcaption} % improves captions for subfigures
+\usepackage{upgreek}
 
 
 \usepackage{placeins} % Adds the \FloatBarrier command
@@ -68,11 +70,7 @@
 \usepackage{titling} % title stuff
 \usepackage{titlesec} % title format customisation
 
-\usepackage{changepage} % multicolumn stuff !!
 
-\usepackage{abstract} % Allows abstract customization
-    \addto{\captionsenglish}{\renewcommand{\abstractname}{}}   % clear the title
-    \renewcommand{\absnamepos}{empty} % originally center -- don't want an abstract title or it's whitespace
 
 
 % Physics Packages
@@ -82,6 +80,7 @@
 
 % Code Formatting Packages
 \usepackage{listings} % code text environment
+\usepackage{verbatim}
 
 
 % Graphics Formatting Packages
@@ -101,6 +100,9 @@
 \usepackage{adjustbox}
 
 
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=0em, topsep=-0.5\parskip}
+\setlist[enumerate]{itemsep=0em, topsep=-0.5\parskip}
 
 
 % ---------------------------------------------------------------------------------------------------
@@ -120,6 +122,9 @@
 %
 % see https://www.overleaf.com/learn/latex/Biblatex_bibliography_styles
 
+
+%CREATIVE COMMONS LICENSES
+\newcommand{\CCSA}{\href{https://creativecommons.org/licenses/by-sa/3.0/deed.en}{CC BY-SA 3.0}}
 
 
 % ---------------------------------------------------------------------------------------------------
@@ -178,15 +183,13 @@
 
 \newcommand{\vmod}[1]{\left\| #1 \right\|} % modulus notation
 
-\newcommand{\mtrx}{\mathbb}
-\newcommand{\identity}{\mtrx{I}}
 
 % Vector Calculus Operators
-%\renewcommand{\grad}{\vect{\nabla}}
-%\renewcommand{\div}{\vect{\nabla} \cdot}
-%\renewcommand{\curl}{\vect{\nabla} \times}
-%\renewcommand{\laplacian}{\bvec{\nabla}^2}
-%\newcommand{\del}{\vect{\nabla}}
+\renewcommand{\grad}{\vect{\nabla}}
+\renewcommand{\div}{\vect{\nabla} \cdot}
+\renewcommand{\curl}{\vect{\nabla} \times}
+\renewcommand{\laplacian}{\bvec{\nabla}^2}
+\newcommand{\del}{\vect{\nabla}}
 
 % projection operator
 \DeclareMathOperator{\vectProj}{proj}
@@ -194,9 +197,9 @@
 
 % Custom Matrix - better spacing
 \newcommand{\Matrix}[1]{\renewcommand{\arraystretch}{1.25}
-    \left[\hspace{0.25em}\begin{matrix}
+    \left[\begin{matrix}
     #1
-\end{matrix}\hspace{0.25em}\right]
+\end{matrix}\right]
 \renewcommand{\arraystretch}{1}}
 
 
@@ -227,6 +230,7 @@
 % || ------------------------------- INTERNAL REFERENCING COMMANDS ------------------------------- ||
 % ---------------------------------------------------------------------------------------------------
 
+
 \newcommand{\secrefNumName}[1]{\mbox{\hyperref[#1]{\S}\ref{#1}\hyperref[#1]{:\hspace{1pt}}\nameref{#1}}} % ref with Num:Name
 \newcommand{\secrefName}[1]{\mbox{\hyperref[#1]{\S\hspace{1pt}}\nameref{#1}}} % ref with just name
 \newcommand{\secrefNum}[1]{\mbox{\hyperref[#1]{\S}\ref{#1}}} % ref with just num
@@ -238,18 +242,18 @@
 
 
 % Lower case commands
-\newcommand{\appref}[1]{\mbox{\hyperref[#1]{appendix\hspace{2pt}\ref*{#1}}}}
-\renewcommand{\eqref}[1]{\mbox{\hyperref[#1]{equation\hspace{2pt}\ref*{#1}}}}
-\newcommand{\figref}[1]{\mbox{\hyperref[#1]{figure\hspace{2pt}\ref*{#1}}}}
-\newcommand{\tableref}[1]{\mbox{\hyperref[#1]{table\hspace{2pt}\ref*{#1}}}}
-\newcommand{\coderef}[1]{\mbox{\hyperref[#1]{listing\hspace{2pt}}\ref{#1}}}
+\newcommand{\chapref}[1]{\mbox{\hyperref[#1]{chapter\hspace{2pt}}\ref{#1}\hyperref[#1]{:\hspace{1pt}}\nameref{#1}}}
+\newcommand{\appref}[1]{\mbox{\hyperref[#1]{appendix\hspace{2pt}}\ref{#1}}}
+\renewcommand{\eqref}[1]{\mbox{\hyperref[#1]{equation\hspace{2pt}}\ref{#1}}}
+\newcommand{\figref}[1]{\mbox{\hyperref[#1]{figure\hspace{2pt}}\ref{#1}}}
+\newcommand{\tableref}[1]{\mbox{\hyperref[#1]{table\hspace{2pt}}\ref{#1}}}
 
 % Capitalised Commands
-\newcommand{\Appref}[1]{\mbox{\hyperref[#1]{Appendix\hspace{2pt}\ref*{#1}}}}
-\newcommand{\Eqref}[1]{\mbox{\hyperref[#1]{Equation\hspace{2pt}\ref*{#1}}}}
-\newcommand{\Figref}[1]{\mbox{\hyperref[#1]{Figure\hspace{2pt}\ref*{#1}}}}
-\newcommand{\Tableref}[1]{\mbox{\hyperref[#1]{Table\hspace{2pt}\ref*{#1}}}}
-\newcommand{\Coderef}[1]{\mbox{\hyperref[#1]{Listing\hspace{2pt}\ref*{#1}}}}
+\newcommand{\Chapref}[1]{\mbox{\hyperref[#1]{Chapter\hspace{2pt}}\ref{#1}\hyperref[#1]{:\hspace{1pt}}\nameref{#1}}}
+\newcommand{\Appref}[1]{\mbox{\hyperref[#1]{Appendix\hspace{2pt}}\ref{#1}}}
+\newcommand{\Eqref}[1]{\mbox{\hyperref[#1]{Equation\hspace{2pt}}\ref{#1}}}
+\newcommand{\Figref}[1]{\mbox{\hyperref[#1]{Figure\hspace{2pt}}\ref{#1}}}
+\newcommand{\Tableref}[1]{\mbox{\hyperref[#1]{Table\hspace{2pt}}\ref{#1}}}
 
 
 % use \cite and \textcite to do references
@@ -283,6 +287,13 @@
 \setlength{\droptitle}{-8em}
 
 
+\newlength{\beforechapskip}
+\newlength{\chaptertopskip}
+\newlength{\chapterbottomskip}
+\setlength{\beforechapskip}{0mm}
+\setlength{\chaptertopskip}{0mm}
+\setlength{\chapterbottomskip}{10mm}
+
 %spacing is:  left, before, after
 \titlespacing{\section}{0pt}{1em}{-0.5em}
 \titlespacing{\subsection}{0pt}{1em}{-0.7em}
@@ -301,12 +312,52 @@
 % A note - this command only works well if there is an empty line after it
 
 
+\newcommand{\setChapterFormatRoman}{
+    \input{chapter types/Chapter Type 2.tex}
+}
+
+
+\newcommand{\setChapterFormatArabic}{
+    \input{chapter types/Chapter Type 1.tex}
+}
+
+\newcommand{\setChapterFormatAppendix}{
+    \input{chapter types/Chapter Type Appendices.tex}
+}
+
+\newcommand{\setChapterFormatReferences}{
+    \input{chapter types/Chapter Type References.tex}
+}
+
+
+
+
+
+
+\newcommand{\ToC}{
+    \setlength{\parskip}{0.2em}
+    \phantomsection
+    \hypertarget{ToC}{}  % Make an anchor to the toc
+    \tableofcontents
+    \thispagestyle{noheader}
+
+    \newpage
+    \setlength{\parskip}{1em}
+}
+
+
 \newcommand{\references}{
-    \fancyhead[L]{\headercase{References}}
-    \addcontentsline{toc}{section}{References}
+    \setcounter{secnumdepth}{-1} % levels under sublevel x are not numbered
+    
+    \fancyhead[LE, LO]{\headercase{References}}
     \setlength\bibitemsep{1.5\itemsep}
-    \defbibheading{SpecialBibHeadingStyle}{\section*{References}}
+
+    \setChapterFormatReferences
+
+    \defbibheading{SpecialBibHeadingStyle}{\chapter{References}}
     \printbibliography[heading=SpecialBibHeadingStyle]
+
+    \setcounter{secnumdepth}{3} % levels under sublevel x are not numbered
 }
 
 
@@ -314,16 +365,10 @@
 % Use at start of appendix section
 \newcommand{\appendices}{
     \appendix
-    \titleformat{\section}{\normalfont\Large\bfseries}{\thesection}{1em}{}
-    \fancyhead[L]{\headercase{Appendices}}
+    \fancyhead[LE, LO]{\headercase{Appendices}}
 
-    \section*{Appendices}
-    \addtocounter{section}{1}
-    \addcontentsline{toc}{section}{Appendices}
-
-    \titleformat{\subsection}{\normalfont\Large\bfseries}{\thesubsection}{1em}{}
-    \titleformat{\subsubsection}{\normalfont\large\bfseries}{\thesubsubsection}{1em}{}
-    \titleformat{\paragraph}{\normalfont\normalsize\bfseries}{\paragraph}{1em}{}
+    \setChapterFormatAppendix
+    \subfile{chapters/Appendices.tex}
 }
 
 
@@ -353,71 +398,28 @@
 
 
 
-
 \newcommand{\fullPageTitle}{
     \begin{titlepage}
-
-        \vspace{\stretch{1}}
-
+        \center
         \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
-        
-        \center % Center everything on the page
-         
 
-        % HEADINGS -----------------------------------------------------------------------------------
-        \vspace*{\fill}
-        \if \Uni \empty
-        \else
-            {\scshape\huge ~\Uni}\\[1em] % Name of your university/college
-        \fi
-        
-        \if \School \empty
-        \else
-            {\scshape\Large ~\School}\\[4em] % Major heading such as course name
-        \fi
-        
-        % \if \Unit \empty
-        % \else
-        %     {\scshape\Large ~\Unit}\\[1em]
-        % \fi
+        \vspace*{\stretch{2}}
 
-        \if \Class \empty
-        \else
-            {\scshape\large ~\Class}\\[3em]% Minor heading such as course title
-        \fi
-
-
-        % TITLE -----------------------------------------------------------------------------------
         \HRule \\[0.4cm]
-        { \Huge \bfseries ~\@title}\\[0.1cm] % Title of your document
-        \HRule \\[2em]
-         
+        { \HUGE \bfseries \@title}\\[0.1cm] % Title of your document
+        \HRule\\[4em]
 
-        % YEAR ----------------------------------------------------------------------------------
-        \if \Year \empty
-        \else
-            {\Large \Year}\\[1em]
-        \fi
-
-
-        % AUTHOR ----------------------------------------------------------------------------------
-        \if \@author \empty
-        \else
-            \vspace{2em}
-            {\large \@author}
-        \fi
-        
+        {\Large \@author}
 
         \vspace{\stretch{4}} % Fill the rest of the page with whitespace
 
-        % DATE ----------------------------------------------------------------------------------------
+        
         \if \@date \empty
         \else
             {\large ~\@date}\\ % Date, change the \today to a set date if you want to be precise
             \vspace{4em}
         \fi
-        
-        \end{titlepage}
+    \end{titlepage}
 }
 \makeatother
 
@@ -429,8 +431,12 @@
 
 \let\cleardoublepage=\clearpage % stops random pages being printed after the ToC and titlepage
 
-% Sets the maximum number of levels in the Table of Contents to 3
+% Sets the maximum number of levels in the Table of Contents to x-1
 \setcounter{secnumdepth}{4}
+
+\makeatletter
+\newcommand\HUGE{\@setfontsize\Huge{50}{60}}
+\makeatother 
 
 
 \newcommand{\super}{\textsuperscript}
@@ -444,17 +450,20 @@
 \graphicspath{{./images/}}
 
 % Headers and footers
+\renewcommand{\chaptermark}[1]{\markboth{\large #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+
 \pagestyle{fancy}
 \fancyhf{}
-\setlength{\headheight}{15.2pt}
+\setlength{\headheight}{22pt}
 \setlength{\headsep}{1.2em}
 \renewcommand{\headrulewidth}{0.5pt}
 \renewcommand{\footrulewidth}{0.5pt}
 
 % overridden by customisation below
-\fancyhead[L]{\headercase{\leftmark}} % Left header - last section on page
-\fancyhead[R]{\Unit~Formula Sheet \Year} % Right Header
-\fancyfoot[C]{\thepage} % Puts page number bottom centre
+\fancyhead[LO, LE]{\headercase{\leftmark}}
+\fancyfoot[RE, RO]{\small\thepage}
+\fancyhead[RO, RE]{\hyperlink{ToC}{Table of Contents}}
 
 
 \fancypagestyle{noheader}{
@@ -474,7 +483,7 @@
 }
 
 
-\newcommand{\alignColumns}{\switchcolumn*\switchcolumn}
+
 
 
 
@@ -486,15 +495,9 @@
 % -------------------------------------------------------------
 
 % Making any of these fields blank will remove them from the titlepage
-\newcommand{\Uni}{The University of Sydney}
-\newcommand{\School}{School of Physics}
-\newcommand{\Unit}{Unit Code}
-\newcommand{\Year}{Year}
-\newcommand{\Class}{}
-\newcommand{\Assignment}{}
-\newcommand{\SID}{123456789}
+\newcommand{\BookName}{Book Name}
 
-\author{Author 1 \\[0.5em] Author 2 \\[0.5em] Author 3 \\}
+\author{Author 1, Author 2, Author 3}
 
 \date{} % makes it undated, remove this line if you want a date to appear
 %\date{\today} % make the date the current date
@@ -507,10 +510,10 @@
 %   --- Semi-Advanced LaTeX users feel free to edit what is below ---  |
 % ----------------------------------------------------------------------
 
-\title{\Unit~Formula Sheet}
+\title{\BookName}
 
 % Formatting
-\numberwithin{equation}{section} % numbers equation with secNum.EqNum, remove to number globally
+\numberwithin{equation}{chapter} % numbers equation with secNum.EqNum, remove to number globally
 
 \setlength{\parindent}{0em} % indent when there is a double newline within the tex code
 \setlength{\parskip}{1em} % vertical space when there is a double newline within the text code
@@ -526,10 +529,11 @@
 }
 
 
-\newcommand{\headercase}[1]{\scshape\nouppercase{#1}}
-\fancyhead[L]{\headercase{\leftmark}} % Left header - last section on page
-\fancyhead[R]{\Unit~Formula Sheet \Year} % Right Header
-\fancyfoot[C]{\small\thepage} % Puts page number bottom centre
+\newcommand{\headercase}[1]{\large\scshape\nouppercase #1}
+\fancyhead[LO, LE]{\headercase{\leftmark}}
+\fancyfoot[RE, RO]{\small\thepage}
+\fancyhead[RO, RE]{\hyperlink{ToC}{Table of Contents}}
+
 
 
 

@@ -144,9 +144,10 @@
     \usetikzlibrary{shapes,arrows,positioning}
     \usetikzlibrary{matrix,calc}
 \usepackage{tikz-3dplot}
-    \usetikzlibrary{calc,patterns,angles,quotes}
+    \usetikzlibrary{calc,patterns,angles,quotes,math,decorations.pathmorphing, decorations.markings, patterns}
 \usepackage{graphicx}
 \usepackage{graphics}
+\usepackage[most]{tcolorbox}
 
 \usepackage{pgfplots}
     % Dunno, it complains if this isn't here
@@ -155,7 +156,23 @@
 \usepackage{adjustbox}
 
 
+ \tikzstyle{damper}=[decoration={markings,  
+   mark connection node=dmp,
+   mark=at position 0.5 with 
+   {
+     \node (dmp) [inner sep=0pt,transform shape,rotate=-90,minimum
+ width=15pt,minimum height=7pt,draw=none] {};
+     \draw [] ($(dmp.north east)+(3pt,0)$) -- (dmp.south east) -- (dmp.south
+ west) -- ($(dmp.north west)+(3pt,0)$);
+     \draw [] ($(dmp.north)+(0,-5pt)$) -- ($(dmp.north)+(0,5pt)$);
+   }
+ }, decorate]
 
+
+
+\usepackage{enumitem}
+\setlist[itemize]{itemsep=0em, topsep=-0.5\parskip}
+\setlist[enumerate]{itemsep=0em, topsep=-0.5\parskip}
 
 % ---------------------------------------------------------------------------------------------------
 % || --------------------------------------- REFERENCING ----------------------------------------- ||
