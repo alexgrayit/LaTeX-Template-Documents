@@ -78,7 +78,7 @@
 
 
 % Physics Packages
-\usepackage[arrowdel]{physics} % - \grad{} \div{} \curl{} \laplacian{}
+\usepackage{physics} % - \grad{} \div{} \curl{} \laplacian{}
 \usepackage{siunitx} % adds si units \unit{\<unit name(s)>} (it's hard to use at first, look up the documentation)
 
 \AtBeginDocument{\RenewCommandCopy\qty\SI}
@@ -197,8 +197,8 @@
 % ---------------------------------------------------------------------------------------------------
 
 % overridden in customization at bottom
-\setlength{\parindent}{0em}
-\setlength{\parskip}{1em}
+% \setlength{\parindent}{0em}
+% \setlength{\parskip}{1em}
 
 
 \newlength{\tablegap}
@@ -241,19 +241,30 @@
 \newcommand{\lvect}[1]{\lhvec{\bvec{#1}}}%final edit here
 % -end Long harpoon vector
 
-\newcommand{\vect}[1]{\hvec{\bvec{#1}}} % used vector format
+\newcommand{\vect}[1]{\bvec{#1}} % used vector format
 \newcommand{\vhat}[1]{\hat{\bvec{#1}}} % used hat format
 
 \newcommand{\vmod}[1]{\left\| #1 \right\|} % modulus notation
 
-\newcommand{\mtrx}{\mathbb}
+\newcommand{\mtrx}{\mathbf}
 \newcommand{\identity}{\mtrx{I}}
+% \newcommand{\cpmtrx}[1]{\bigl[#1\bigr]_{_{\!\times}}\!\!} % cross product matrix
+
+\makeatletter
+\newcommand{\cpmtrx}[1]{%
+  \@ifnextchar^{\cpmtrx@withsup{#1}}{\cpmtrx@nosup{#1}}%
+}
+\newcommand{\cpmtrx@nosup}[1]{\bigl[#1\bigr]_{_{\!\times}}\!}
+\def\cpmtrx@withsup#1^#2{\bigl[#1\bigr]_{_{\!\times}}\mkern-10mu^{#2} \,}
+\makeatother
+
+\newcommand{\T}{\mathsf{T}} % transpose
 
 % Vector Calculus Operators
 \renewcommand{\grad}{\vect{\nabla}}
-\renewcommand{\div}{\vect{\nabla} \cdot}
-\renewcommand{\curl}{\vect{\nabla} \times}
-\renewcommand{\laplacian}{\bvec{\nabla}^2}
+\renewcommand{\div}{\vect{\nabla}\! \cdot \!}
+\renewcommand{\curl}{\vect{\nabla}\! \times \!}
+\renewcommand{\laplacian}{\nabla^2}
 \newcommand{\del}{\vect{\nabla}}
 
 % projection operator
@@ -321,6 +332,10 @@
 \newcommand{\Figref}[1]{\mbox{\hyperref[#1]{Figure\hspace{2pt}\ref*{#1}}}}
 \newcommand{\Tableref}[1]{\mbox{\hyperref[#1]{Table\hspace{2pt}\ref*{#1}}}}
 \newcommand{\Coderef}[1]{\mbox{\hyperref[#1]{Listing\hspace{2pt}\ref*{#1}}}}
+
+\usepackage{cleveref} % adds clever referencing commands
+\crefname{section}{\S}{sections}
+\Crefname{section}{\S}{Sections}
 
 
 % use \cite and \textcite or \parencite to do references
