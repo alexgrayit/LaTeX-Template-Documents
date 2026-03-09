@@ -520,6 +520,90 @@
         
         \end{titlepage}
 }
+
+
+\newcommand{\fullPageTitleOther}{
+    \begin{titlepage}
+
+        \vspace{\stretch{1}}
+
+        \newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+        
+        \center % Center everything on the page
+         
+
+        % HEADINGS -----------------------------------------------------------------------------------
+        \begin{flushright}
+            \includegraphics[width=0.3\textwidth]{usyd full logo.png}
+        \end{flushright}
+        
+        \vspace*{\fill}
+        
+
+        \if \Uni \empty
+        \else
+            {\scshape\LARGE ~\Uni}\\[2em] % Name of your university/college
+        \fi
+        
+        \if \School \empty
+        \else
+            {\scshape\Large ~\School}\\[4em] % Major heading such as course name
+        \fi
+        
+        \if \Unit \empty
+        \else
+            {\scshape\Large ~\Unit}\\[1em]
+        \fi
+
+        \if \Class \empty
+        \else
+            {\scshape\large ~\Class}\\[3em]% Minor heading such as course title
+        \fi
+
+
+        % TITLE -----------------------------------------------------------------------------------
+        \HRule \\[0.4cm]
+        { \Huge \bfseries ~\@title}\\[0.1cm] % Title of your document
+        \HRule \\[4em]
+         
+
+        % AUTHOR ----------------------------------------------------------------------------------
+        \if \authors \empty
+        \else
+            \begin{minipage}{0.4\textwidth}
+                \begin{flushleft}
+                    {\large \foreach \nom in \authors {
+                        \nom\\
+                    }
+                    }
+                \end{flushleft}
+            \end{minipage}
+        \fi
+        \if \SIDs \empty
+        \else
+            \begin{minipage}{0.4\textwidth}
+                \begin{flushright}
+                    {\large \foreach \nom in \SIDs {
+                        \nom\\
+                    }
+                    }
+                \end{flushright}
+            \end{minipage}
+        \fi
+        
+
+        \vspace{\stretch{4}} % Fill the rest of the page with whitespace
+
+        % DATE ----------------------------------------------------------------------------------------
+        \if \@date \empty
+        \else
+            {\large ~\@date}\\ % Date, change the \today to a set date if you want to be precise
+            \vspace{4em}
+        \fi
+        
+        \end{titlepage}
+}
+
 \makeatother
 
 
@@ -582,6 +666,12 @@
 \newcommand{\SID}{123456789}
 
 \author{Author 1 \\[0.5em] Author 2 \\[0.5em] Author 3 \\}
+
+\usepackage{pgffor}
+
+\def\authors{Author 1, Author 2, Author 3} % comma separated list of authors for title page
+\def\SIDs{123456789, 987654321, 123123123} % comma separated list of SIDs for title page
+
 
 \date{} % makes it undated, remove this line if you want a date to appear
 %\date{\today} % make the date the current date
